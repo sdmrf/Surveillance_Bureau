@@ -10,8 +10,28 @@ import Bar6 from './Prison/Bar 6.png';
 
 import Left from './Prison/Left Hand.png';
 import Right from './Prison/Right Hand.png';
+import { useEffect } from "react";
 
 const P1 = () => {
+
+  useEffect(() => {
+    const bars = document.querySelectorAll('.Prison-Bar');
+
+    const handleScroll = () => {
+        bars.forEach((bar) => {
+            const scrollOffset = window.scrollY;
+            const speed = 0.5; 
+            const yPos = -(scrollOffset * speed);
+            bar.style.transform = `translateY(${yPos}px)`;
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
 
   
   return (
