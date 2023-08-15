@@ -4,7 +4,9 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 25px;
+
+    background-color: #000;
 
     .Top {
         --wav1: url('https://i.postimg.cc/43KhFcRw/wave.png');
@@ -150,7 +152,7 @@
         .Down {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
     }
