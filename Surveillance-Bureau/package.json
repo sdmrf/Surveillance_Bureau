@@ -14,10 +14,13 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.419",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "spline": "^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
