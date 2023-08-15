@@ -12,6 +12,8 @@ import Left from './Prison/Left Hand.png';
 import Right from './Prison/Right Hand.png';
 
 const P1 = () => {
+
+  
   return (
     <div className="Parallax">
       <Header />
@@ -19,21 +21,21 @@ const P1 = () => {
         <div className="Prison-Bar Bar-1">
           <img src={Bar1} alt="prison bars" />
         </div>
-        <div className="Prison-Bar Bar-1">
+        <div className="Prison-Bar Bar-2">
           <img src={Bar2} className='B2' alt="prison bars" />
           <img src={Left} className='LH' alt="Left Hand" />
         </div>
-        <div className="Prison-Bar Bar-2">
+        <div className="Prison-Bar Bar-3">
           <img src={Bar3} alt="prison bars" />
         </div>
-        <div className="Prison-Bar Bar-3">
+        <div className="Prison-Bar Bar-4">
           <img src={Bar4} alt="prison bars" />
           <img src={Right} className='RH' alt="Right Hand" />
         </div>
-        <div className="Prison-Bar Bar-4">
+        <div className="Prison-Bar Bar-5">
           <img src={Bar5} alt="prison bars" />
         </div>
-        <div className="Prison-Bar Bar-5">
+        <div className="Prison-Bar Bar-6">
           <img src={Bar6} alt="prison bars" />
         </div>
       </div>
