@@ -1,6 +1,6 @@
 
 .Parallax {
-    height: 100%;
+    height: 100vh;
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   
     display: flex;
@@ -35,6 +35,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-58%, -47%);
+
+            height: 100%;
+            width: 100%;
           }
         }
   
@@ -46,6 +49,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-45%, -48%);
+
+            height: 100%;
+            width: 100%;
           }
         }
       }
@@ -53,9 +59,9 @@
   
     .Logo {
       position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      bottom: 0;
+      left: 0;
+      margin: auto all;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -64,7 +70,8 @@
   
       color: #fafafa;
       font-size: 3rem;
-  
+
+      text-shadow: 5px 5px 5px rgba(0,0,0,0.66);  
       .S {
         color: #e90064;
       }

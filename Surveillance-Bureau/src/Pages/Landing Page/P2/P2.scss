@@ -1,7 +1,75 @@
-.P2{
+.P2 {
     height: 100vh;
     background-image: url("../../../assets/Sb-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    .Top {
+        display: flex;
+    }
+
+    .Main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px;
+
+        .Left {
+            .Text {
+                display: block;
+                width: 500px;
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+
+
+                    /** TEXT GRADIENT */
+                    color: #fff;
+                    background-image: -webkit-linear-gradient(0deg, #ffffff 0%, #a5a5a5 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-text-fill-color: transparent;
+
+                }
+            }
+        }
+
+        .Right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 400px;
+            }
+        }
+    }
+    .Bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        button{
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgba($color: #6044D8, $alpha: 0.7);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: rgba($color: #6044D8, $alpha: 1);
+                scale: 1.1;
+            }
+        }
+    }
 }

@@ -3,11 +3,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import Spline from "../../Components/Spline.jsx"
 const Footer = () => {
   return (
     <div className="Footer">
-
       <div className="Bottom">
         <div className="Up">
           <div className="Item Lg">
@@ -70,10 +68,10 @@ const Footer = () => {
       </div>
 
       <div className="Top">
-        <div class="waves">
-          <div class="wave wave1"></div>
-          <div class="wave wave2"></div>
-          <div class="wave wave3"></div>
+        <div className="waves">
+          <div className="wave wave1"></div>
+          <div className="wave wave2"></div>
+          <div className="wave wave3"></div>
         </div>
       </div>
     </div>
