@@ -3,7 +3,7 @@ import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
 import Home from "./Pages/Home/Home"
 import LandingPage from "./Pages/Landing Page/LandingPage"
-
+import Login from  "./Pages/Home/Login/Login"
 import {RouterProvider, createBrowserRouter } from "react-router-dom"
 import "./App.scss"
 
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: (<Contact />),
+  },
+  {
+    path: "login",
+    element: (<Login />),
   },
 ]);
 

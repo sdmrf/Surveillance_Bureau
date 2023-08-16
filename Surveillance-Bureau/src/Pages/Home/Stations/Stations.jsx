@@ -5,11 +5,10 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Spline from "@splinetool/react-spline";
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 const Stations = () => {
-    const handleGoBack = () => {
-        window.history.back();
-    };
+
 
     const memoizedSpline = useMemo(() => (
         <Spline scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode" loading="lazy" />
@@ -17,7 +16,9 @@ const Stations = () => {
 
     return (
         <div className="Stations">
-            <ArrowBackIcon className="Back" onClick={handleGoBack} />
+        <Link to ="/">
+            <ArrowBackIcon className="Back"/>
+        </Link>
             <div className="Wrapper">
                 <div className="Left">
                     <div className="Top">
@@ -49,9 +50,11 @@ const Stations = () => {
                         </div>
                     </div>
                     <div className="Authenticate">
+                    <Link className="Link" to="/Login">
                         <button>Authenticate
                             <ArrowForwardIcon />
                         </button>
+                    </Link>
                     </div>
                 </div>
             </div>

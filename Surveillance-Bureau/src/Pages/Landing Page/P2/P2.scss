@@ -7,6 +7,11 @@
 
     .Top {
         display: flex;
+
+        .Spline{
+            position: relative;
+            left: 5%;
+        }
     }
 
     .Main {
@@ -18,13 +23,13 @@
         .Left {
             .Text {
                 display: block;
-                width: 500px;
+                width: 550px;
 
                 h1 {
                     font-size: 50px;
                     font-weight: 800;
                     margin-bottom: 20px;
-
+                    font-family: var(--font-family);
 
                     /** TEXT GRADIENT */
                     color: #fff;

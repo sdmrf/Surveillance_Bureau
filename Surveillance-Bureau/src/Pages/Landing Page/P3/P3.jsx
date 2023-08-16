@@ -1,7 +1,12 @@
 import "./P3.scss"
 import Pfp from "../../../assets/AnimePfp.png"
+import Pfp1 from "../../../assets/mrfPfp.jpg"
 import fbi1 from '../../../assets/Fbi1.jpeg'
 import fbi2 from '../../../assets/Fbi2.jpeg'
+import { UilReact } from '@iconscout/react-unicons'
+import Eth from "../../../assets/Ehtereum logo.svg"
+import oc from "../../../assets/OpenCV_logo_white.png"
+
 
 const P3 = () => {
   return (
@@ -19,8 +24,11 @@ const P3 = () => {
                 <button className="Button">Explore</button>
               </div>
               <div className="Logo">
-
+                 <UilReact className = "Icon" size="140" color="#61DAFB"/>
+                 <img className="Eth" src={Eth} alt="eth" />
+                 <img className="oc" src={oc} alt="oc" />
               </div>
+              
             </div>
             <div className="Right">
               <div className="Pfp_container">
@@ -34,7 +42,7 @@ const P3 = () => {
           <div className="Bottom">
             <div className="Left">
               <div className="Pfp_container">
-                <img src={Pfp} alt="pfp" />
+                <img src={Pfp1} alt="pfp" />
               </div>
               <h1><span className="S">S</span>yed <span className="M">M</span>aruf <span className="A">A</span>li</h1>
               <h2>Founder / Developer / Ui designer</h2>
