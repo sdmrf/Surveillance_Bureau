@@ -19,6 +19,32 @@
 
     }
 
+    .Shape {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        
+    }
+
+   
+    
+    .Shape.First{
+        position: absolute;
+        top: -10%;
+        right: -10%;
+        background: linear-gradient(90deg, rgba(238, 66, 180, 0.49) 2.60%, #FF3DA9 100%);
+        box-shadow: 0px 0px 1.6799999475479126px 0px #D91B80, 0px 0px 3.359999895095825px 0px #D91B80, 0px 0px 11.760000228881836px 0px #D91B80, 0px 0px 23.520000457763672px 0px #D91B80, 0px 0px 40.31999969482422px 0px #D91B80, 0px 0px 70.55999755859375px 0px #D91B80;
+    }
+
+    .Shape.Second {
+        position: absolute;
+        bottom: -10%;
+        right: -10%;
+        background: linear-gradient(68deg, #B0C7E8 0%, rgba(160, 132, 220, 0.91) 53.13%, rgba(111, 99, 193, 0.98) 84.90%, #645CBB 100%);
+        box-shadow: 0px 0px 1.6799999475479126px 0px #AE97DD, 0px 0px 3.359999895095825px 0px #AE97DD, 0px 0px 11.760000228881836px 0px #AE97DD, 0px 0px 23.520000457763672px 0px #AE97DD, 0px 0px 40.31999969482422px 0px #AE97DD, 0px 0px 70.55999755859375px 0px #AE97DD;
+    }
+
     .Wrapper {
         display: flex;
 
@@ -31,7 +57,7 @@
             .Top {
                 .Heading {
                     font-size: 2.5rem;
-                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: var(--font-family);
                     font-weight: 700;
                     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #000000;
@@ -79,7 +105,7 @@
 
                 margin-right: -20%;
 
-                width: 275px;
+                width: 350px;
                 padding: 25px;
 
                 display: flex;
@@ -89,25 +115,27 @@
 
                 .ProfileIcon {
                     display: flex;
-
                     position: absolute;
                     top: -15%;
                     left: 35%;
                     z-index: 1;
+
+                    
                     img {
                         width: 100px;
                         height: 100px;
                         border: 5px solid #6F42A8;
                         border-radius: 50%;
+                        background-color: lightgray;
                     }
                 }
 
                 .Inputs {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 50px;
                     position: relative;
-                    margin-top: 50px;
+                    margin-top: 75px;
 
 
                     input {
@@ -210,6 +238,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    margin-bottom: 25px;
 
                     .Text {
                         font-size: 1rem;

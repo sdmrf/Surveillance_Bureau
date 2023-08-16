@@ -7,9 +7,9 @@ const P3 = () => {
   return (
     <div className="P3">
       <div className="Container">
-        <div className="shape"></div>
-        <div className="shape"></div>
-        <div className="shape"></div>
+        <div className="Shape First"></div>
+        <div className="Shape Second"></div>
+        <div className="Shape Third"></div>
         <div className="Wrapper">
           <div className="Top">
             <div className="Left">

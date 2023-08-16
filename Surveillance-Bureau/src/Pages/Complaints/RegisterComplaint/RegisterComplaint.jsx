@@ -1,17 +1,24 @@
 import "./RegisterComplaint.scss"
 import RC from "../../../assets/RegisterComplaint.svg"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ProfilePic from "../../../assets/ProfilePic.svg"
+import user from "../../../assets/user.svg"
+
 
 const RegisterComplaint = () => {
+    const handleGoBack = () => {
+        window.history.back();
+    };
+
     return (
         <div className="RegisterComplaint">
-            <ArrowBackIcon className="Back" />
+            <div className="Shape First"></div>
+            <div className="Shape Second"></div>
+            <ArrowBackIcon className="Back" onClick={handleGoBack} />
             <div className="Wrapper">
                 <div className="Left">
                     <div className="Top">
                         <div className="Heading">
-                            <span className="Reg">Register </span><span className="Compl">Complaint!</span>
+                            <span className="Reg">Register </span><span className="Compl">Complaint !</span>
                         </div>
                     </div>
                     <div className="Mid">
@@ -27,10 +34,10 @@ const RegisterComplaint = () => {
                 <div className="Right">
                     <form action="" className="Login">
                         <div className="ProfileIcon">
-                            <img src={ProfilePic} alt="Profile Icon" />
+                            <img src={user} alt="Profile Icon" />
                         </div>
                         <div className="Inputs">
-                            <input type="text" id="UID" placeholder="Aadhar ID" required  />
+                            <input type="text" id="UID" placeholder="Aadhar ID" required />
                             <input type="text" id="Pass" placeholder="Password" required />
                         </div>
                         <div className="Button">
