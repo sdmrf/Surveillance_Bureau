@@ -2,7 +2,8 @@ import Complaints from "./Pages/Complaints/Complaints"
 import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
 import LandingPage from "./Pages/Landing Page/LandingPage"
-
+import Login from "./Pages/Login/Login"
+import Register_complaint from "./Pages/Complaints/Complaints"
 import {RouterProvider, createBrowserRouter } from "react-router-dom"
 import "./App.scss"
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: (<Contact />),
+  },
+  {
+    path: "login",
+    element: (<Login />),
   },
 ]);
 

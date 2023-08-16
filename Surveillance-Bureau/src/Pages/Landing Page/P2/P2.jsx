@@ -1,14 +1,14 @@
 import "./P2.scss"
 import Header from "../../../components/Header/Header"
 import Spline from '@splinetool/react-spline';
-
+import { Link } from 'react-router-dom'
 import Cop from "../../../assets/Cop.png"
 
 const P2 = () => {
   return (
     <div className="P2">
       <div className="Top">
-        <Spline scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode" />
+        <Spline className="Spline" scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode" />
         <Header />
       </div>
       <div className="Main">
@@ -24,7 +24,7 @@ const P2 = () => {
         </div>
       </div>
       <div className="Bottom">
-        <button>GET STARTED</button>
+       <Link to="/login"><button>GET STARTED</button></Link>
       </div>
     </div>
   )

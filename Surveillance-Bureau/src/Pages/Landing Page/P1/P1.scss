@@ -58,6 +58,8 @@
     }
   
     .Logo {
+      font-style:inherit;
+      font-family: var(--font-family);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -67,10 +69,9 @@
       align-items: center;
       width: 100%;
       z-index: 2;
-  
+      font-weight: 100;
       color: #fafafa;
       font-size: 3rem;
-
       text-shadow: 5px 5px 5px rgba(0,0,0,0.66);  
       .S {
         color: #e90064;

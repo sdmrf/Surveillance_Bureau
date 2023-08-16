@@ -1,6 +1,5 @@
 .P3 {
     height: 100vh;
-<<<<<<< HEAD
     background-color: var(--main-color);
     position: relative;
     overflow: hidden;
@@ -101,18 +100,48 @@
 
                         Button {
                             font-family: 'Inter', sans-serif;
-                            font-size: 35px;
+                            font-size: 25px;
                             font-weight: 500;
-                            color: #fff;
-                            opacity: 0.6999998507;
-                            background: #6044D8;
+                            color: lightgray;
+                            background-color: rgba($color: #6044D8, $alpha: 0.7);
+                            ;
                             border: 3px solid #6044D8;
-                            padding-left: 10px;
-                            padding-right: 10px;
+                            padding: 5px 27.5px 5px 27.5px;
                             border-radius: 50px;
                             position: relative;
                             top: 15px;
                             left: 205px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #fff;
+                                cursor: pointer;
+                                background-color: rgba($color: #6044D8, $alpha: 1);
+                                scale: 1.1;
+                            }
+                        }
+                    }
+
+                    .Logo {
+                        .Icon {
+                            position: relative;
+                            top: 50px;
+                            left: 100px;
+                        }
+
+                        .Eth {
+                            position: relative;
+                            top: 70px;
+                            left: 100px;
+                        }
+
+                        .oc {
+                            width: 90px;
+                            height: 100px;
+                            position: relative;
+                            top: 150px;
+                            left: -125px;
                         }
                     }
                 }
@@ -130,7 +159,7 @@
 
                     .Pfp_container {
                         position: relative;
-                        left: 175px;
+                        left: 43%;
                         top: 20px;
 
                         img {
@@ -202,9 +231,10 @@
                     backdrop-filter: blur(22.5px);
                     --webkit-backdrop-filter: blur(22.5px);
 
+
                     .Pfp_container {
                         position: relative;
-                        left: 175px;
+                        left: 43%;
                         top: 20px;
 
                         img {
@@ -230,8 +260,12 @@
                             color: #E90064;
                         }
 
-                        .B {
+                        .M {
                             color: #865DFF;
+                        }
+
+                        .A {
+                            color: #3751c3;
                         }
                     }
 
@@ -340,7 +374,4 @@
             }
         }
     }
-=======
-    background-color: #000;
->>>>>>> origin/Maruf
 }
