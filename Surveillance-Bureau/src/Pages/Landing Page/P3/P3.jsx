@@ -1,15 +1,15 @@
 import "./P3.scss"
-import Pfp from "../../../assets/animePfp.png"
-import fbi1 from '../../../assets/fbi.jpeg'
-import fbi2 from '../../../assets/images.jpeg'
+import Pfp from "../../../assets/AnimePfp.png"
+import fbi1 from '../../../assets/Fbi1.jpeg'
+import fbi2 from '../../../assets/Fbi2.jpeg'
 
 const P3 = () => {
   return (
     <div className="P3">
       <div className="Container">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
+        <div className="shape"></div>
+        <div className="shape"></div>
+        <div className="shape"></div>
         <div className="Wrapper">
           <div className="Top">
             <div className="Left">
