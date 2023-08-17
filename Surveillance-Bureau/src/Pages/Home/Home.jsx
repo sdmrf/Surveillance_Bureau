@@ -4,7 +4,7 @@ import Dashboard from "../../Pages/Dashboard/Dashboard"
 const Home = () => {
   return (
     <div className="Home">
-    <Dashboard />
+      <Stations />
     </div>
   )
 }

@@ -4,8 +4,13 @@ import Contact from "./Pages/Contact/Contact"
 import Home from "./Pages/Home/Home"
 import LandingPage from "./Pages/Landing Page/LandingPage"
 import Login from  "./Pages/Home/Login/Login"
+import Dashboard from "./Pages/Dashboard/Dashboard"
 import {RouterProvider, createBrowserRouter } from "react-router-dom"
 import "./App.scss"
+import IdentifyCriminal from "./Pages/Dashboard/Identify Criminal/IdentifyCriminal"
+import RegisterCriminal from "./Pages/Dashboard/Register Criminal/RegisterCriminal"
+import UpdateCriminal from "./Pages/Dashboard/Update Criminal/UpdateCriminal"
+import ViewHistory from "./Pages/Dashboard/View History/ViewHistory"
 
 const Layout = () => {
   return (
@@ -41,6 +46,27 @@ const router = createBrowserRouter([
     path: "login",
     element: (<Login />),
   },
+  {
+    path: "dashboard",
+    element: (<Dashboard />),
+  }
+  ,
+  {
+    path: "dashboard/identify-criminal",
+    element: (<IdentifyCriminal />),
+  },
+  {
+    path: "dashboard/register-criminal",
+    element: (<RegisterCriminal />),
+  },
+  {
+    path: "dashboard/update-criminal",
+    element: (<UpdateCriminal />),
+  },
+  {
+    path: "dashboard/view-history",
+    element: (<ViewHistory/>),
+  }
 ]);
 
 const App = () => {
