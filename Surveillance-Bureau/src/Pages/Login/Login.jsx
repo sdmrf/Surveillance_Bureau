@@ -1,10 +1,16 @@
 import './login.scss'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <div className="Login">
        <div className="Gb">
-          <button className="Back">Go Back</button>
+          <Link to='/home'>
+          <button className="Back">
+            <ArrowBackIcon className='icon'/>
+             Go Back</button>
+          </Link>
         </div>
       <div className="Container">
       <div class="shape"></div>
@@ -17,7 +23,7 @@ const Login = () => {
             <input type="password" placeholder='Password' />
             <div className="Button">
             <button className='loginButton' >
-              <h1>Log In Now</h1> 
+              <h1> Log In Now</h1> 
               <ChevronRightIcon className='icon'  />
               </button>
             </div>

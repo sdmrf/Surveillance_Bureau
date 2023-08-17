@@ -1,14 +1,16 @@
 import "./P2.scss"
 import Header from "../../../components/Header/Header"
 import Spline from '@splinetool/react-spline';
-import { Link } from 'react-router-dom'
 import Cop from "../../../assets/Cop.png"
+import { Link } from "react-router-dom";
+import { useMemo } from "react";
 
 const P2 = () => {
+
   return (
     <div className="P2">
       <div className="Top">
-        <Spline className="Spline" scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode" />
+      <Spline className="Spline" scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode" loading="lazy" />
         <Header />
       </div>
       <div className="Main">
@@ -24,7 +26,10 @@ const P2 = () => {
         </div>
       </div>
       <div className="Bottom">
-       <Link to="/login"><button>GET STARTED</button></Link>
+        <Link to="/home">
+        <button>GET STARTED</button>
+        </Link>
+        
       </div>
     </div>
   )
