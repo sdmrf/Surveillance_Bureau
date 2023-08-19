@@ -14,6 +14,10 @@ const Login = () => {
     setShowModal(true);
   }
 
+  const handleFingerPrint = () => {
+
+  }
+
 
   return (
     <div className="Login">
@@ -44,7 +48,10 @@ const Login = () => {
             </div>
             <div className="FingerPrint">
               <h1>Verify Your Identity</h1>
-              <FingerprintIcon className='FingerPrintIcon' />
+              <Link to='/dashboard'>
+                <FingerprintIcon className='FingerPrintIcon' />
+              </Link>
+
               <span>Place your finger on the scanner</span>
             </div>
           </div>}

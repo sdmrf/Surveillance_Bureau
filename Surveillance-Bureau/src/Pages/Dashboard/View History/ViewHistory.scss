@@ -183,11 +183,13 @@
                             .Country {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
-                                font-size: 20px;
+                                font-size: 1.2rem;
+                                padding: 5px 5px 5px 5px;
+
                             }
 
                             .CountryName {
-                                font-size: 15px;
+                                font-size: 1.2rem;
                             }
                         }
 
@@ -201,11 +203,12 @@
                             .State {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
-                                font-size: 20px;
+                                font-size: 1.2rem;
+                                padding: 5px 5px 5px 5px;
                             }
 
                             .statename {
-                                font-size: 15px;
+                                font-size: 1.2rem;
                             }
                         }
 
@@ -219,11 +222,12 @@
                             .city {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
-                                font-size: 20px;
+                                font-size: 1.2rem;
+                                padding: 5px 5px 5px 5px;
                             }
 
                             .cityname {
-                                font-size: 15px;
+                                font-size: 1.2rem;
                             }
                         }
                     }
@@ -237,7 +241,6 @@
                     top: 20%;
                     left: 10%;
 
-
                     .First {
                         display: flex;
                         flex-direction: row;
@@ -250,17 +253,17 @@
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
 
                         .ID {
-                            font-size: 20px;
+                            font-size: 1.2rem;
                             color: gray;
                         }
 
                         .Text {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
-                            font-size: 25px;
+                            font-size: 1.2rem;
+                            padding: 5px 5px 5px 5px;
                         }
                     }
-
                     .Second {
                         display: flex;
                         flex-direction: row;
@@ -273,19 +276,19 @@
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
 
                         .ID {
-                            font-size: 20px;
+                            font-size: 1.2rem;
                             color: gray;
                         }
 
                         .Text {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
-                            font-size: 25px;
+                            font-size: 1.2rem;
+                            padding: 5px 5px 5px 5px;
                         }
                     }
                 }
             }
-
 
             .RightCard {
                 position: relative;
@@ -300,7 +303,6 @@
                 box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
                 backdrop-filter: blur(22.5px);
 
-
                 .CriminalProfile {
                     display: flex;
                     flex-direction: column;
@@ -308,21 +310,18 @@
                     justify-content: center;
                     position: relative;
                     top: 10%;
-
                     img {
                         width: 150px;
                         height: 150px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
-
                     h1 {
                         font-family: var(--font-family);
                         font-size: 30px;
                         color: rgba(122, 69, 188, 0.90);
                     }
                 }
-
                 .CriminalInfo {
                     position: relative;
                     top: 15%;
@@ -330,91 +329,93 @@
                     display: flex;
                     flex-direction: column;
                     gap: 50px;
-
                     .First {
                         display: block;
                         width: 400px;
                         color: #fff;
                         font-family: var(--font-family);
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
-
                         .Name {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
-                            font-size: 20px;
+                            font-size: 1.2rem;
+                            padding: 5px 5px 5px 5px;
                         }
-
-                        .text {}
+                        .text {
+                            font-size: 1.2rem;
+                        }
                     }
-
                     .Format {
                         display: flex;
                         flex-direction: row;
                         gap: 30px;
-
                         .Second {
                             display: block;
                             width: 200px;
                             color: #fff;
                             font-family: var(--font-family);
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
-
                             .DOB {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
-                                font-size: 20px;
+                                font-size: 1.2rem;
+                                padding: 5px 5px 5px 5px;
                             }
-
-                            .text {}
+                            .text {
+                                font-size: 1.2rem;
+                            }
                         }
-
                         .Third {
                             display: block;
                             width: 200px;
                             color: #fff;
                             font-family: var(--font-family);
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
-
                             .Gender {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
-                                font-size: 20px;
+                                font-size: 1.2rem;
+                                padding: 5px 5px 5px 5px;
                             }
-
-                            .text {}
+                            .text {
+                                font-size: 1.2rem;
+                            }
                         }
                     }
-
                     .Fourth {
                         display: block;
                         width: 400px;
                         color: #fff;
                         font-family: var(--font-family);
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
-
                         .Mob {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
-                            font-size: 20px;
+                            font-size: 1.2rem;
+                            padding: 5px 5px 5px 5px;
                         }
 
-                        .text {}
+                        .text {
+                            font-size: 1.2rem;
+                        }
                     }
-
                     .Fifth {
                         display: block;
                         width: 400px;
+                        line-height: 40px;
                         color: #fff;
                         font-family: var(--font-family);
-                        border-bottom: 2px solid rgba(100, 92, 187, 0.50);
-
                         .Address {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
-                            font-size: 20px;
+                            font-size: 1.2rem;
+                            padding: 5px 5px 5px 5px;
+                            border-bottom: 2px solid rgba(100, 92, 187, 0.50);
                         }
-
-                        .text {}
+                        .text {
+                            border-bottom: 2px solid rgba(100, 92, 187, 0.50);
+                            font-size: 1.2rem;
+                        }
                     }
                 }
             }

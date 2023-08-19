@@ -8,6 +8,7 @@ import mug from "../../../assets/mugshot.jpg"
 import mug1 from "../../../assets/mugshot 2.jpg"
 import mug2 from "../../../assets/mug.jpg"
 import mug3 from "../../../assets/mug 2.jpg"
+import PreviousCases from "./PreviousCases/PreviousCases";
 
 const data = [
   mug,
@@ -43,7 +44,7 @@ const ViewHistory = () => {
           <Link to="/dashboard" className="Link"> <ArrowBackIcon className="back" /> </Link>
         </div>
         <div className="ViewHistory">
-            <Link to="/dashboard" className="Link"> <button className="show"> View History</button> </Link>
+            <Link to="/dashboard/view-history/previous-cases" className="Link"> <button className="show"> View History</button> </Link>
         </div>
         <div className="Shape First"></div>
         <div className="Shape Second"></div>
@@ -64,7 +65,7 @@ const ViewHistory = () => {
                   <img src={mug2} alt="" />
               </div>
               <div className="MidRight">
-                <l1 className="Firstline"> <span className="Country">Country :</span> <span className="CountryName"> United states of America</span></l1>
+                <l1 className="Firstline"> <span className="Country">Country :</span> <span className="CountryName"> USA</span></l1>
                 <l2 className="Secondline"> <span className="State">State :</span> <span className="statename"> Ohio</span></l2>
                 <l3 className="Thirdline"> <span className="city">City :</span> <span className="cityname"> Cleveland</span></l3>
               </div>
