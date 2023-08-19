@@ -46,6 +46,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            color: #b5b5b5;
         }
 
         .Location {
@@ -54,6 +55,8 @@
             font-size: 0.8rem;
             font-weight: 700;
             border-left: 1px solid #b5b5b5;
+
+            font-family: var(--font-family);
         }
     }
 

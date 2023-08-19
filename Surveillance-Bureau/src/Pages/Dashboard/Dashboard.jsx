@@ -16,7 +16,7 @@ const Dashboard = () => {
       <main className="Main">
         <div className="Cards">
           <Link to="/dashboard/identify-criminal" className="Link">
-            <div className="Card IdentifyCriminal">
+            <div className="Card Identify-Criminal">
               <div className="Top">
                 <FingerprintIcon className="Icon" />
               </div>
@@ -26,7 +26,7 @@ const Dashboard = () => {
             </div>
           </Link>
           <Link to="/dashboard/register-criminal" className="Link">
-            <div className="Card RegisterCriminal">
+            <div className="Card Register-Criminal">
               <div className="Top">
                 <PersonAddAlt1OutlinedIcon className="Icon" />
               </div>
@@ -36,7 +36,7 @@ const Dashboard = () => {
             </div>
           </Link>
           <Link to="/dashboard/update-criminal" className="Link">
-            <div className="Card UpdateCriminal">
+            <div className="Card Update-Criminal">
               <div className="Top">
                 <EditNoteOutlinedIcon className="Icon" />
               </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
             </div>
           </Link>
           <Link to="/dashboard/view-history" className="Link">
-            <div className="Card ViewHistory">
+            <div className="Card View-History">
               <div className="Top">
                 <HistoryIcon className="Icon" />
               </div>

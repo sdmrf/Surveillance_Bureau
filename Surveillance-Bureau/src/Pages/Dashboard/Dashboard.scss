@@ -34,10 +34,12 @@
                     border-bottom: 1px solid #57606D;
 
                     .Icon{
-                        width: 50px;
-                        height: 50px;
-                        color: #b89b7d;
-                        text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+                        width: 30px;
+                        height: 30px;
+                        padding: 5px;
+                        color: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.8);
                     }
                 }
                 .Bottom{
@@ -58,16 +60,16 @@
                 }
             }
 
-            .Card.IdentifyCriminal{
+            .Card.Identify-Criminal{
                 background-color: rgba($color: #2298F1, $alpha: 1);
             }
-            .Card.RegisterCriminal{
+            .Card.Register-Criminal{
                 background-color: rgba($color: #66B92E, $alpha: 1);
             }
-            .Card.UpdateCriminal{
+            .Card.Update-Criminal{
                 background-color: rgba($color: #DA932C, $alpha: 1);
             }
-            .Card.ViewHistory{
+            .Card.View-History{
                 background-color: rgba($color: #D65B4A, $alpha: 1);
             }
         }
