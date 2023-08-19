@@ -1,0 +1,165 @@
+.IdentifyCriminal {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+
+    .Top {
+        display: flex;
+        padding: 25px 50px;
+        justify-content: space-between;
+        align-items: center;
+
+        .Back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            svg {
+                color: #fafafa;
+                height: 50px;
+                width: 50px;
+            }
+
+        }
+
+        .Logo {
+            display: flex;
+            color: #fafafa;
+            font-style: inherit;
+            font-family: var(--font-family);
+            font-size: 1.2rem;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.66);
+            font-weight: 700;
+
+            .S {
+                color: #e90064;
+            }
+
+            .B {
+                color: #865dff;
+            }
+        }
+    }
+
+    .Mid {
+        display: flex;
+
+        .Left {
+            flex: 1;
+
+            .Wrapper {
+                margin-left: 10%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .Top {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    font-size: 2.5rem;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    line-height: 1.5;
+
+
+                    .VI {
+                        color: #FFFFFF;
+                    }
+
+                    .S {
+                        color: #9854F4;
+                    }
+                }
+
+                .Down {
+                    color: #f0f0f0;
+                    font-size: 1.5rem;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                    display: block;
+                    width: 600px;
+
+                }
+            }
+
+        }
+
+        .Right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .Illustration {
+                width: 60%;
+                user-select: none;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+        }
+
+    }
+    .Bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .Scroll {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #f0f0f0;
+            border-radius: 50%;
+            position: relative;
+            animation: down 1.5s infinite;
+            -webkit-animation: down 1.5s infinite;
+
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: 18px;
+                width: 18px;
+                height: 18px;
+                border-left: 2px solid #f0f0f0;
+                border-bottom: 2px solid #f0f0f0;
+                transform: rotate(-45deg);
+            }
+        }
+
+        @keyframes down {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translateY(15px);
+            }
+
+            40% {
+                transform: translate(0);
+            }
+        }
+
+    }
+}

@@ -2,18 +2,19 @@ import "./RegisterComplaint.scss"
 import RC from "../../../assets/RegisterComplaint.svg"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import user from "../../../assets/user.svg"
+import { Link } from "react-router-dom"
 
 
 const RegisterComplaint = () => {
-    const handleGoBack = () => {
-        window.history.back();
-    };
+
 
     return (
         <div className="RegisterComplaint">
             <div className="Shape First"></div>
             <div className="Shape Second"></div>
-            <ArrowBackIcon className="Back" onClick={handleGoBack} />
+            <Link to="/">
+                <ArrowBackIcon className="Back" />
+            </Link>
             <div className="Wrapper">
                 <div className="Left">
                     <div className="Top">

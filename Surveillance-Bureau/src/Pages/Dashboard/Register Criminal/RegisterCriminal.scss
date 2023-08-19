@@ -513,7 +513,7 @@
                     display: flex;
                     justify-content: end;
 
-                    border-bottom: 1px solid #57606D;
+                    border-bottom: 1px solid #5375EE;
 
                     .Icon {
                         width: 50px;
@@ -535,8 +535,9 @@
                     color: #f0f0f0;
 
                     span {
+                        margin-top: 10px;
                         display: block;
-                        width: 100px;
+                        width: 200px;
                         font-size: 1rem;
                         font-weight: 700;
                         text-align: center;
@@ -572,7 +573,7 @@
                 background-color: #5A3ED3;
                 border-radius: 50px;
                 border: none;
-                padding: 5px 15px;
+                padding: 7px 20px;
                 color: rgba($color: #fafafa, $alpha: 0.8);
                 font-weight: 700;
                 font-size: 1.2rem;

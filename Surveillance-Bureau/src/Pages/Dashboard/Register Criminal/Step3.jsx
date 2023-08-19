@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import user from "../../../assets/user.svg"
 import AddIcon from '@mui/icons-material/Add';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CheckIcon from '@mui/icons-material/Check';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import FaceIcon from '@mui/icons-material/Face';
+import PortraitIcon from '@mui/icons-material/Portrait';
 
 
 const Step3 = ({ formData, prevStep }) => {
@@ -52,7 +51,7 @@ const Step3 = ({ formData, prevStep }) => {
           <div className="Cards">
             <div className="GenFacialEnc">
               <div className="Top">
-                <FaceIcon className="Icon" />
+                <PortraitIcon className="Icon" />
               </div>
               <div className="Bottom">
                 <span>Genrate Facial Encodings</span>
