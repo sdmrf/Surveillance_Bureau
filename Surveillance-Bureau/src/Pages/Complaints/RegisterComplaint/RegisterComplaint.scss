@@ -1,8 +1,9 @@
 .RegisterComplaint {
     background-color: hsl(0, 0%, 0%);
     position: relative;
+    overflow: hidden;
 
-
+    /* The following styles are for the ".Back" element */
     .Back {
         color: #fff;
         height: 50px;
@@ -12,70 +13,80 @@
         top: 15px;
         left: 15px;
         position: absolute;
-
     }
 
+    /* The following styles are for the ".Shape" element */
     .Shape {
         position: relative;
         width: 300px;
         height: 300px;
         border-radius: 300px;
-
+        
     }
 
-    .Shape.First {
+   
+    
+    .Shape.First{
         position: absolute;
         top: -10%;
         right: -10%;
         background: linear-gradient(90deg, rgba(238, 66, 180, 0.49) 2.60%, #FF3DA9 100%);
-        box-shadow: 0px 0px 1.6799999475479126px 0px #D91B80, 0px 0px 3.359999895095825px 0px #D91B80, 0px 0px 11.760000228881836px 0px #D91B80, 0px 0px 23.520000457763672px 0px #D91B80, 0px 0px 40.31999969482422px 0px #D91B80, 0px 0px 70.55999755859375px 0px #D91B80;
+        box-shadow: 0px 0px 1.68px 0px #D91B80, 0px 0px 3.36px 0px #D91B80, 0px 0px 11.76px 0px #D91B80, 0px 0px 23.52px 0px #D91B80, 0px 0px 40.32px 0px #D91B80, 0px 0px 70.56px 0px #D91B80;
     }
 
+    /* Styles for the ".Shape.Second" */
     .Shape.Second {
         position: absolute;
         bottom: -10%;
         right: -10%;
         background: linear-gradient(68deg, #B0C7E8 0%, rgba(160, 132, 220, 0.91) 53.13%, rgba(111, 99, 193, 0.98) 84.90%, #645CBB 100%);
-        box-shadow: 0px 0px 1.6799999475479126px 0px #AE97DD, 0px 0px 3.359999895095825px 0px #AE97DD, 0px 0px 11.760000228881836px 0px #AE97DD, 0px 0px 23.520000457763672px 0px #AE97DD, 0px 0px 40.31999969482422px 0px #AE97DD, 0px 0px 70.55999755859375px 0px #AE97DD;
+        box-shadow: 0px 0px 1.68px 0px #AE97DD, 0px 0px 3.36px 0px #AE97DD, 0px 0px 11.76px 0px #AE97DD, 0px 0px 23.52px 0px #AE97DD, 0px 0px 40.32px 0px #AE97DD, 0px 0px 70.56px 0px #AE97DD;
     }
 
+    /* The following styles are for the ".Wrapper" element */
     .Wrapper {
         display: flex;
 
+        /* Styles for the ".Left" section */
         .Left {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 25px;
 
+            /* Styles for the ".Top" section */
             .Top {
+                /* Styles for the ".Heading" element */
                 .Heading {
                     font-size: 2.5rem;
-                    font-family: var(--font-family);
+                    font-family: var(--font-family); /* Use an actual font family */
                     font-weight: 700;
                     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #000000;
                     position: relative;
+
                     display: flex;
                     flex-direction: column;
                     left: 140px;
                     top: 50px;
 
+                    /* Styles for the ".Reg" class */
                     .Reg {
                         color: #FFFFFF;
                     }
 
+                    /* Styles for the ".Compl" class */
                     .Compl {
                         color: #6044D8;
                     }
                 }
             }
 
+            /* Styles for the ".Mid" section */
             .Mid {
                 display: flex;
                 align-items: center;
-                justify-content: end;
-
+                justify-content: flex-end; /* Changed to "flex-end" for alignment */
                 span {
                     position: relative;
                     top: 50px;
@@ -88,22 +99,26 @@
             }
         }
 
+        /* Styles for the ".Right" section */
         .Right {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            /* Styles for the ".Login" element */
             .Login {
+                overflow: visible;
                 background: rgba(255, 255, 255, 0.11);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(4.9px);
                 -webkit-backdrop-filter: blur(4.9px);
                 border: 1px solid rgba(255, 255, 255, 0.36);
-                height: 500px;
+
                 margin-right: -20%;
                 width: 350px;
+                height: 500px;
                 padding: 25px;
                 display: flex;
                 flex-direction: column;
@@ -111,13 +126,15 @@
                 position: relative;
                 overflow: visible;
 
+                /* Styles for the ".ProfileIcon" element */
                 .ProfileIcon {
                     display: flex;
                     position: absolute;
                     top: -10%;
                     left: 35%;
-                    z-index: 10;
+                    z-index: 1;
 
+                    
                     img {
                         width: 100px;
                         height: 100px;
@@ -127,6 +144,7 @@
                     }
                 }
 
+                /* Styles for the ".Inputs" element */
                 .Inputs {
                     display: flex;
                     flex-direction: column;
@@ -134,7 +152,7 @@
                     position: relative;
                     margin-top: 75px;
 
-
+                    /* Styles for the input elements */
                     input {
                         outline: none;
                         border: none;
@@ -152,18 +170,17 @@
                             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         }
-
                     }
-
                 }
 
+                /* Styles for the ".Button" element */
                 .Button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     margin: 25px 0px;
 
+                    /* Styles for the button element */
                     button {
                         width: 120px;
                         height: 40px;
@@ -179,9 +196,9 @@
                             transform: scale(0.95);
                         }
                     }
-
                 }
 
+                /* Styles for the ".Verify" element */
                 .Verify {
                     display: flex;
                     justify-content: center;
@@ -191,13 +208,12 @@
                     backdrop-filter: blur(4.9px);
                     -webkit-backdrop-filter: blur(4.9px);
                     border: 1px solid rgba(255, 255, 255, 0.36);
-
                     border-radius: 10px;
 
+                    /* Styles for the ".Input" element */
                     .Input {
                         width: 100%;
                         padding: 10px;
-
 
                         input {
                             border: none;
@@ -207,29 +223,24 @@
                             font-weight: 700;
                             color: #777;
 
-
                             &::placeholder {
                                 color: #b5b5b5;
                                 font-size: 0.8rem;
                             }
-
-
                         }
                     }
 
+                    /* Styles for the ".Timer" element */
                     .Timer {
                         padding: 10px;
                         color: #b5b5b5;
                         font-size: 0.8rem;
                         font-weight: 700;
                         border-left: 1px solid #fff;
-
                     }
-
-
-
                 }
 
+                /* Styles for the ".Register" element */
                 .Register {
                     display: flex;
                     flex-direction: column;
@@ -237,11 +248,13 @@
                     align-items: center;
                     margin-bottom: 25px;
 
+                    /* Styles for the ".Text" element */
                     .Text {
                         font-size: 1rem;
                         color: #b5b5b5;
                     }
 
+                    /* Styles for the ".Link" element */
                     .Link {
                         font-size: 1rem;
                         color: #6044D8;
@@ -249,12 +262,8 @@
                         font-weight: 700;
                         cursor: pointer;
                     }
-
-
                 }
-
             }
-
         }
     }
 }

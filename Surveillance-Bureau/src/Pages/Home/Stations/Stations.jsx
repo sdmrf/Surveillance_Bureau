@@ -50,11 +50,11 @@ const Stations = () => {
                         </div>
                     </div>
                     <div className="Authenticate">
-                         <Link to="/login">
+                    <Link className="Link" to="/Login">
                         <button>Authenticate
                             <ArrowForwardIcon />
                         </button>
-                        </Link>
+                    </Link>
                     </div>
                 </div>
             </div>

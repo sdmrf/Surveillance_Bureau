@@ -3,15 +3,15 @@ import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
 import Home from "./Pages/Home/Home"
 import LandingPage from "./Pages/Landing Page/LandingPage"
-import Login from "./Pages/Login/Login"
-import Register_complaint from "./Pages/Complaints/Complaints"
+import Login from  "./Pages/Home/Login/Login"
+import Viewcriminal from "./Pages/Dashboard/View History/ViewHistory"
 import {RouterProvider, createBrowserRouter } from "react-router-dom"
 import "./App.scss"
 
 const Layout = () => {
   return (
     <div className="App">
-    <LandingPage />
+    <Viewcriminal />
     </div>
   )
 }

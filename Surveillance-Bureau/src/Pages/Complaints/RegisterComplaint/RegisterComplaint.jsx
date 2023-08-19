@@ -38,7 +38,7 @@ const RegisterComplaint = () => {
                         </div>
                         <div className="Inputs">
                             <input type="text" id="UID" placeholder="Aadhar ID" required />
-                            <input type="text" id="Pass" placeholder="Password" required />
+                            <input type="password" id="Pass" placeholder="Password" required />
                         </div>
                         <div className="Button">
                             <button type="submit">Generate OTP</button>

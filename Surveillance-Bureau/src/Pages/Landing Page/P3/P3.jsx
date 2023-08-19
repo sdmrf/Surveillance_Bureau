@@ -1,11 +1,12 @@
 import "./P3.scss"
-import Pfp1 from "../../../assets/mrfPfp.jpg"
 import Pfp from "../../../assets/AnimePfp.png"
+import Pfp1 from "../../../assets/mrfPfp.jpg"
 import fbi1 from '../../../assets/Fbi1.jpeg'
 import fbi2 from '../../../assets/Fbi2.jpeg'
 import { UilReact } from '@iconscout/react-unicons'
 import Eth from "../../../assets/Ehtereum logo.svg"
 import oc from "../../../assets/OpenCV_logo_white.png"
+
 
 const P3 = () => {
   return (
