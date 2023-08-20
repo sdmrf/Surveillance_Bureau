@@ -100,29 +100,37 @@
                 backdrop-filter: blur(22.5px);
 
                 .Top {
-                    position: relative;
-                    top: 5%;
-                    left: 10%;
-                    width: 400px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     height: 200px;
-                    overflow: hidden;
+                    padding-top: 25px;
 
-                    .Imgcontainer {
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                        height: 100%;
-                        transition: all 1s ease;
-                        width: max-content;
-
-                        img {
-                            width: 400px;
-                            height: 200px;
-                            border-radius: 5px;
-                            object-fit: cover;
+                    .ImgContainer {
+                        width: 400px;
+                        height: 200px;
+                        overflow: hidden;
+                        
+        
+                        .ImgWrapper{
+                            width: max-content;
+                            height: 100%;
+                            display: flex;
+                            transition: transform 0.75s ease-in-out;
+        
+                            .Slide{
+                                width: 400px;
+                                height: 100%;
+        
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
                         }
+        
                     }
-
 
                     .arrow {
                         width: 50px;
@@ -131,19 +139,15 @@
                         backdrop-filter: blur(10px);
                         -webkit-backdrop-filter: blur(10px);
                         color: #fff;
-                        position: absolute;
                         z-index: 99;
-                        top: 0;
-                        bottom: 0;
-                        margin: auto;
                         cursor: pointer;
-
                         &.left {
-                            left: 0;
+                            position: relative;
+                            left: 50px;
                         }
-
-                        &.right {
-                            right: 0;
+                        &.right{
+                            position: relative;
+                            right: 50px;
                         }
                     }
 
@@ -264,6 +268,7 @@
                             padding: 5px 5px 5px 5px;
                         }
                     }
+
                     .Second {
                         display: flex;
                         flex-direction: row;
@@ -310,18 +315,21 @@
                     justify-content: center;
                     position: relative;
                     top: 10%;
+
                     img {
                         width: 150px;
                         height: 150px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
+
                     h1 {
                         font-family: var(--font-family);
                         font-size: 30px;
                         color: rgba(122, 69, 188, 0.90);
                     }
                 }
+
                 .CriminalInfo {
                     position: relative;
                     top: 15%;
@@ -329,65 +337,77 @@
                     display: flex;
                     flex-direction: column;
                     gap: 50px;
+
                     .First {
                         display: block;
                         width: 400px;
                         color: #fff;
                         font-family: var(--font-family);
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
+
                         .Name {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
                             font-size: 1.2rem;
                             padding: 5px 5px 5px 5px;
                         }
+
                         .text {
                             font-size: 1.2rem;
                         }
                     }
+
                     .Format {
                         display: flex;
                         flex-direction: row;
                         gap: 30px;
+
                         .Second {
                             display: block;
                             width: 200px;
                             color: #fff;
                             font-family: var(--font-family);
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
+
                             .DOB {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
                                 font-size: 1.2rem;
                                 padding: 5px 5px 5px 5px;
                             }
+
                             .text {
                                 font-size: 1.2rem;
                             }
                         }
+
                         .Third {
                             display: block;
                             width: 200px;
                             color: #fff;
                             font-family: var(--font-family);
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
+
                             .Gender {
                                 background-color: rgba(100, 92, 187, 0.50);
                                 mix-blend-mode: color-dodge;
                                 font-size: 1.2rem;
                                 padding: 5px 5px 5px 5px;
                             }
+
                             .text {
                                 font-size: 1.2rem;
                             }
                         }
                     }
+
                     .Fourth {
                         display: block;
                         width: 400px;
                         color: #fff;
                         font-family: var(--font-family);
                         border-bottom: 2px solid rgba(100, 92, 187, 0.50);
+
                         .Mob {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
@@ -399,12 +419,14 @@
                             font-size: 1.2rem;
                         }
                     }
+
                     .Fifth {
                         display: block;
                         width: 400px;
                         line-height: 40px;
                         color: #fff;
                         font-family: var(--font-family);
+
                         .Address {
                             background-color: rgba(100, 92, 187, 0.50);
                             mix-blend-mode: color-dodge;
@@ -412,6 +434,7 @@
                             padding: 5px 5px 5px 5px;
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
                         }
+
                         .text {
                             border-bottom: 2px solid rgba(100, 92, 187, 0.50);
                             font-size: 1.2rem;
