@@ -1,0 +1,185 @@
+.Step2 {
+    height: 100vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    /* The following styles are for the ".Shape" element */
+    .Shape {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Changed from 300px to make it a circle */
+    }
+
+    /* Styles for the ".Shape.First" */
+    .Shape.First {
+        position: absolute;
+        top: -5%;
+        right: -5%;
+        background: linear-gradient(90deg, rgba(238, 66, 180, 0.49) 2.60%, #FF3DA9 100%);
+        box-shadow: 0px 0px 1.68px 0px #D91B80, 0px 0px 3.36px 0px #D91B80, 0px 0px 11.76px 0px #D91B80, 0px 0px 23.52px 0px #D91B80, 0px 0px 40.32px 0px #D91B80, 0px 0px 70.56px 0px #D91B80;
+    }
+
+    .Top {
+        .Title{
+
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+    
+            font-size: 2.5rem;
+            font-family: var(--font-family);
+            font-weight: 700;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            line-height: 1.5;
+    
+            margin-bottom: 25px;
+
+            position: relative;
+            top: 20px;
+            left: 50px;
+    
+            .S1 {
+                color: #FFFFFF;
+            }
+    
+            .Ver {
+                color: #9854F4;
+            }
+        }
+    }
+
+    .Bottom{
+        display: flex;
+        padding: 25px;
+
+        .Left{
+            flex: 2;
+            display: flex;
+            justify-content: end;
+            align-self: end;
+            
+
+
+            img{
+                width: 100%;
+                height: 100%;
+                filter: contrast(1.5) brightness(0.8);
+
+            }
+        }
+        .Right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+
+            .Card{
+                width: 300px;
+                height: 100%;
+                background-color: rgba($color: #DBD2F5, $alpha: 1);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 25px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 15px;
+
+                .Top{
+                    text-align: center;
+                    h1{
+                        font-size: 1.5rem;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+                        line-height: 1.5;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        color: rgba($color: #AD7BE9, $alpha: 1)
+                    }
+
+                    span{
+                        font-size: 1rem;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        line-height: 1.5;
+                        text-align: center;
+                        color: rgba($color: #000, $alpha: 0.75)
+                    }
+                }
+                .Mid{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    video{
+                        height: 175px;
+                        width: 175px;
+                        border-radius: 50%;
+
+                        object-fit: cover;
+
+                        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+                    }
+                }
+
+                .Bottom{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    button{
+                        width: 150px;
+                        height: 50px;
+                        padding: 10px;
+                        background-color: rgba($color: #EA63FF, $alpha: 0.8);
+                        border-radius: 25px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                        font-size: 1.25rem;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        line-height: 1.5;
+                        text-align: center;
+                        color: #FFFFFF;
+
+                        transition: all 0.25s ease-in-out;
+
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        &:hover{
+                            background-color: rgba($color: #EA63FF, $alpha: 1);
+                        }
+
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                            font-family: var(--font-family);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+}
