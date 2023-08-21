@@ -28,23 +28,23 @@ const PreviousCases = () => {
               </div>
               <div className="Content">
                 <div className="Case">
-                  <h1>#C142979</h1>
-                  <h1>Gold robbery - IPC 390</h1>
+                  <h1 className='CaseID'>#C142979</h1>
+                  <h1 className='Charges'>Gold robbery - IPC 390</h1>
                   <Link to="/dashboard/view-history/view-cases" className='Icon'><VisibilityIcon className='Icon'/></Link>
                 </div>
                 <div className="Case">
-                  <h1>#M119006</h1>
-                  <h1>Sexual harassment - IPC 354</h1>
+                  <h1 className='CaseID'>#M119006</h1>
+                  <h1 className='Charges'>Sexual harassment - IPC 354</h1>
                   <Link to="/dashboard/view-history/view-cases" className='Icon'><VisibilityIcon className='Icon'/></Link>
                 </div>
                 <div className="Case">
-                  <h1>#B010705</h1>
-                  <h1> Kidnapping  - IPC 363</h1>
+                  <h1 className='CaseID'>#B010705</h1>
+                  <h1 className='Charges'> Kidnapping  - IPC 363</h1>
                   <Link to="/dashboard/view-history/view-cases" className='Icon'><VisibilityIcon className='Icon'/></Link>
                 </div>
                 <div className="Case">
-                  <h1>#P169324</h1>
-                  <h1>Attempted murder - IPC 307</h1>
+                  <h1 className='CaseID'>#P169324</h1>
+                  <h1 className='Charges'>Attempted murder - IPC 307</h1>
                   <Link to="/dashboard/view-history/view-cases" className='Icon'><VisibilityIcon className='Icon'/></Link>
                 </div>
               </div>

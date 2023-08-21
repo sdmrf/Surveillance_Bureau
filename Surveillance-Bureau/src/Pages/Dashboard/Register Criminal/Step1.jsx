@@ -59,7 +59,7 @@ const Step1 = ({ formData, setFormData, nextStep }) => {
                             type="file"
                             accept="image/jpeg, image/png"
                             style={{ display: "none" }}
-                            onChange={(e) => (setPhoto(e.target.files[0]), console.log(e.target.files[0]))}
+                            onChange={(e) => (setPhoto(e.target.files[0]))}
                         />
                     </div>
                     <span>Upload Photo </span>
