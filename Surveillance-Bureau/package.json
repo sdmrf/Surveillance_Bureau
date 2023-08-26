@@ -24,6 +24,7 @@
     "react-spring": "^9.7.2",
     "sass": "^1.65.1",
     "spline": "^0.0.0"
+
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
