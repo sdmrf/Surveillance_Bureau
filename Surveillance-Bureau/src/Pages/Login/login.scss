@@ -7,17 +7,13 @@
 
 
     .Gb {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         position: relative;
-        align-items: center;
 
         .Back {
             position: absolute;
             top: 350px;
-            left: 200px;
-            width: 180px;
+            left: 100px;
+            width: 150px;
             height: 50px;
             border-radius: 50px;
             border: none;
@@ -78,12 +74,13 @@
                 align-items: center;
                 text-align: center;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 color: white;
                 width: 400px;
                 height: 550px;
                 padding: 30px;
                 border-radius: 35px;
+
                 border: 3px solid rgba(0, 0, 0, 0.50);
                 background: linear-gradient(180deg, rgba(138, 138, 138, 0.06) 0.02%, rgba(182, 182, 182, 0.14) 0.03%);
                 box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
@@ -103,10 +100,11 @@
                     height: 40px;
                     background: none;
                     border: none;
-                    border-bottom: 2px solid #AD7BE9;
+                    border-bottom: 2px solid #D1D1D4;
                     border-radius: 5px;
                     padding-left: 10px;
                     color: aliceblue;
+                    margin-bottom: 10px;
 
                     &::placeholder {
                         color: lightgray;

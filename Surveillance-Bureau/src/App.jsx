@@ -11,6 +11,8 @@ import IdentifyCriminal from "./Pages/Dashboard/Identify Criminal/IdentifyCrimin
 import RegisterCriminal from "./Pages/Dashboard/Register Criminal/RegisterCriminal"
 import UpdateCriminal from "./Pages/Dashboard/Update Criminal/UpdateCriminal"
 import ViewHistory from "./Pages/Dashboard/View History/ViewHistory"
+import PreviousCases from "./Pages/Dashboard/View History/PreviousCases/PreviousCases"
+import ViewCases from "./Pages/Dashboard/View History/ViewCases/ViewCases"
 
 const Layout = () => {
   return (
@@ -66,6 +68,14 @@ const router = createBrowserRouter([
   {
     path: "dashboard/view-history",
     element: (<ViewHistory/>),
+  },
+  {
+    path: "dashboard/view-history/previous-cases",
+    element: (<PreviousCases/>),
+  },
+  {
+    path: "dashboard/view-history/view-cases",
+    element: (<ViewCases/>),
   }
 ]);
 

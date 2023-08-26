@@ -5,12 +5,9 @@
     overflow: hidden;
 
     .Container {
+        height: 100%;
+        width: 100%;
         position: absolute;
-
-        @media screen and (min-width: 992px) {
-            scale: 0.9;
-        }
-
 
         .Shape {
             position: relative;
@@ -47,10 +44,6 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-
-            @media screen and (min-width: 992px) {
-            }
-                
 
 
             top: 6.1%;

@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Spline from "@splinetool/react-spline";
 import { useMemo } from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Stations = () => {
 
@@ -16,9 +16,9 @@ const Stations = () => {
 
     return (
         <div className="Stations">
-        <Link to ="/">
+            <Link to='/'>
             <ArrowBackIcon className="Back"/>
-        </Link>
+            </Link>
             <div className="Wrapper">
                 <div className="Left">
                     <div className="Top">

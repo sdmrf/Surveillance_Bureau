@@ -1,8 +1,8 @@
 import "./P2.scss"
 import Header from "../../../components/Header/Header"
 import Spline from '@splinetool/react-spline';
-import { Link } from 'react-router-dom'
 import Cop from "../../../assets/Cop.png"
+import { Link } from "react-router-dom";
 
 const P2 = () => {
 
@@ -25,7 +25,7 @@ const P2 = () => {
         </div>
       </div>
       <div className="Bottom">
-       <Link to="/home"><button>GET STARTED</button></Link>
+        <Link to="/Home" className="Link"><button>GET STARTED</button></Link>
       </div>
     </div>
   )

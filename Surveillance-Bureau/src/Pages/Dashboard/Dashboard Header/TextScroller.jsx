@@ -6,7 +6,7 @@ const TextScroller = ({ text }) => {
 
   const scrolling = useSpring({
     from: { transform: "translateX(100%)" },
-    to: { transform: "translateX(-150%)" },
+    to: { transform: "translateX(-170%)" },
     config: { duration: 8000 },
     reset: true,
     //reverse: key % 2 === 0, // Reverse the animation every other cycle

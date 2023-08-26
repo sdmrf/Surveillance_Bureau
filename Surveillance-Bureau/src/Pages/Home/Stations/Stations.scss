@@ -91,6 +91,7 @@
 
             }
             .Search {
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -99,14 +100,11 @@
                 backdrop-filter: blur(4.9px);
                 -webkit-backdrop-filter: blur(4.9px);
                 border: 1px solid rgba(255, 255, 255, 0.36);
-
                 border-radius: 10px;
 
                 .Input {
                     width: 100%;
                     padding: 10px;
-
-
                     input {
                         border: none;
                         background-color: transparent;
