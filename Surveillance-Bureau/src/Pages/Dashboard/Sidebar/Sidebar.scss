@@ -1,0 +1,117 @@
+.Sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 0;
+
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    .Title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 30px;
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: var(--font-family);
+        color: #ad7be9;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 20px;
+      }
+    }
+
+    .Links {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        padding: 0;
+
+        height: 100%;
+        width: 100%;
+
+        a {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+
+          font-size: 1.2rem;
+          font-weight: 600;
+          font-family: var(--font-family);
+          color: #fafafa;
+
+          text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+          cursor: pointer;
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+          background: rgba(185, 185, 185, 0.02);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background: rgba(185, 185, 185, 0.75);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(0, 0, 0, 0.18);
+          }
+        }
+      }
+    }
+  }
+}
+
+.Sidebar.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0%);
+}
+
+.Sidebar.closed {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-120%);
+}

@@ -1,3 +1,380 @@
-.P3{
+.P3 {
     height: 100vh;
+    background-color: var(--main-color);
+    position: relative;
+    overflow: hidden;
+
+    .Container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+        .Shape {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            
+        }
+
+       
+        
+        .Shape.First{
+            left: -90px;
+            top: -100px;
+            background: linear-gradient(90deg, rgba(120, 20, 87, 0.49) 2.60%, #FF3DA9 100%);
+            box-shadow: 0px 0px 1.6799999475479126px 0px #D91B80, 0px 0px 3.359999895095825px 0px #D91B80, 0px 0px 11.760000228881836px 0px #D91B80, 0px 0px 23.520000457763672px 0px #D91B80, 0px 0px 40.31999969482422px 0px #D91B80, 0px 0px 70.55999755859375px 0px #D91B80;
+        }
+
+        .Shape.Second {
+            left: 1375px;
+            top: -100px;
+            background: linear-gradient(68deg, #B0C7E8 0%, rgba(160, 132, 220, 0.91) 53.13%, rgba(111, 99, 193, 0.98) 84.90%, #645CBB 100%);
+            box-shadow: 0px 0px 1.6799999475479126px 0px #AE97DD, 0px 0px 3.359999895095825px 0px #AE97DD, 0px 0px 11.760000228881836px 0px #AE97DD, 0px 0px 23.520000457763672px 0px #AE97DD, 0px 0px 40.31999969482422px 0px #AE97DD, 0px 0px 70.55999755859375px 0px #AE97DD;
+        }
+
+        .Shape.Third{
+            left: 400px;
+            background: linear-gradient(68deg, rgba(55, 78, 198, 0.85) 0%, rgba(132, 167, 220, 0.77) 53.13%, rgba(11, 35, 121, 0.85) 100%);
+            box-shadow: 0px 0px 1.6799999475479126px 0px #AE97DD, 0px 0px 3.359999895095825px 0px #AE97DD, 0px 0px 11.760000228881836px 0px #AE97DD, 0px 0px 23.520000457763672px 0px #AE97DD, 0px 0px 40.31999969482422px 0px #AE97DD, 0px 0px 70.55999755859375px 0px #AE97DD;
+        }
+
+
+        .Wrapper {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 3%;
+            left: 6.1%;
+
+            .Top {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+
+                .Left {
+                    display: flex;
+                    flex-direction: row;
+                    width: 850px;
+                    height: 325px;
+                    border-radius: 50px;
+                    border: 3px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(68, 111, 222, 0.30);
+                    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(22.5px);
+                    --webkit-backdrop-filter: blur(22.5px);
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+
+                    .Explore {
+
+                        h1 {
+                            font-family: 'Headland One', cursive;
+                            position: relative;
+                            left: 100px;
+                            top: 20px;
+                            color: rgba(224, 224, 224, 0.90);
+                            font-size: 40px;
+                            font-style: normal;
+                            font-weight: 500;
+
+                            .S {
+                                color: #E90064;
+                            }
+
+                            .B {
+                                color: #865DFF;
+                            }
+                        }
+
+                        h2 {
+                            display: block;
+                            width: 319px;
+                            font-family: 'Headland One', cursive;
+                            position: relative;
+                            left: 100px;
+                            top: 10px;
+                            color: rgba(224, 224, 224, 0.90);
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+
+                        Button {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 25px;
+                            font-weight: 500;
+                            color: lightgray;
+                            background-color: rgba($color: #6044D8, $alpha: 0.7);
+                            ;
+                            border: 3px solid #6044D8;
+                            padding: 5px 27.5px 5px 27.5px;
+                            border-radius: 50px;
+                            position: relative;
+                            top: 15px;
+                            left: 205px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #fff;
+                                cursor: pointer;
+                                background-color: rgba($color: #6044D8, $alpha: 1);
+                                scale: 1.1;
+                            }
+                        }
+                    }
+
+                    .Logo {
+                        .Icon {
+                            position: relative;
+                            top: 50px;
+                            left: 100px;
+                        }
+
+                        .Eth {
+                            position: relative;
+                            top: 70px;
+                            left: 100px;
+                        }
+
+                        .oc {
+                            width: 90px;
+                            height: 100px;
+                            position: relative;
+                            top: 150px;
+                            left: -125px;
+                        }
+                    }
+                }
+
+                .Right {
+                    width: 450px;
+                    height: 325px;
+                    border-radius: 50px;
+                    border: 3px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(68, 111, 222, 0.30);
+                    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(22.5px);
+                    --webkit-backdrop-filter: blur(22.5px);
+
+
+                    .Pfp_container {
+                        position: relative;
+                        left: 43%;
+                        top: 20px;
+
+                        img {
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 50px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h1 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 110px;
+                        top: 30px;
+                        color: rgba(224, 224, 224, 0.90);
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+
+                        .S {
+                            color: #E90064;
+                        }
+
+                        .B {
+                            color: #865DFF;
+                        }
+                    }
+
+                    h2 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 100px;
+                        top: 30px;
+                        color: rgba(224, 224, 224, 0.90);
+                        opacity: 0.6999998507;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+
+                    h3 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 5px;
+                        top: 50px;
+                        color: rgba(224, 224, 224, 0.90);
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+
+
+            .Bottom {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .Left {
+                    width: 450px;
+                    height: 325px;
+                    border-radius: 50px;
+                    border: 3px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(68, 111, 222, 0.30);
+                    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(22.5px);
+                    --webkit-backdrop-filter: blur(22.5px);
+
+
+                    .Pfp_container {
+                        position: relative;
+                        left: 43%;
+                        top: 20px;
+
+                        img {
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 50px;
+                            object-fit: cover;
+                        }
+                    }
+
+
+                    h1 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 110px;
+                        top: 30px;
+                        color: rgba(224, 224, 224, 0.90);
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+
+                        .S {
+                            color: #E90064;
+                        }
+
+                        .M {
+                            color: #865DFF;
+                        }
+
+                        .A {
+                            color: #3751c3;
+                        }
+                    }
+
+                    h2 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 100px;
+                        top: 30px;
+                        color: rgba(224, 224, 224, 0.90);
+                        opacity: 0.6999998507;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+
+                    h3 {
+                        font-family: 'Headland One', cursive;
+                        position: relative;
+                        left: 5px;
+                        top: 50px;
+                        color: rgba(224, 224, 224, 0.90);
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+
+                .Right {
+                    width: 850px;
+                    height: 325px;
+                    border-radius: 50px;
+                    border: 3px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(68, 111, 222, 0.30);
+                    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(22.5px);
+                    --webkit-backdrop-filter: blur(22.5px);
+                    display: flex;
+                    flex-direction: row;
+
+                    .Text {
+                        display: flex;
+                        flex-direction: column;
+
+                        .Heading {
+                            h1 {
+                                position: relative;
+                                left: 25px;
+                                display: block;
+                                width: 550px;
+                                color: rgba(224, 224, 224, 0.90);
+                                font-style: normal;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .bottom {
+                            display: flex;
+                            flex-direction: row;
+                            position: relative;
+                            left: 25px;
+
+                            .Info {
+                                display: block;
+                                width: 150px;
+                                font-family: var(--font-family);
+                                font-size: 15px;
+                                color: rgba(224, 224, 224, 0.90);
+
+                                h1 {
+                                    color: gray;
+                                    font-size: 25px;
+                                }
+
+                                span {
+                                    color: lightgray;
+                                }
+                            }
+                        }
+                    }
+
+                    .Fbi {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 30px;
+
+                        img {
+                            margin-top: 7.5px;
+                            width: 220px;
+                            height: 150px;
+                            border-radius: 25px;
+                            object-fit: cover;
+                            margin-bottom: 10px;
+                        }
+
+
+                        img {
+                            width: 220px;
+                            height: 150px;
+                            border-radius: 25px;
+                            object-fit: cover;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
