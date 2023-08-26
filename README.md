@@ -36,51 +36,7 @@ Our key features include:
 Our vision is to empower law enforcement agencies with the tools they need to create safer communities. Join us in this journey of innovation and security enhancement.
 
 ## Project Structure
-
-
-Absolutely, Bro! I've updated the README to include the project structure in the table of contents as well as the rest of the sections:
-
-markdown
-Copy code
-# Surveillance Bureau
-
-Welcome to the Surveillance Bureau project! In a world where criminal activities are becoming increasingly sophisticated, law enforcement agencies need cutting-edge tools to combat crime effectively. This is where the Surveillance Bureau comes in. Our innovative web application leverages AI, facial recognition, biometrics, and blockchain to identify criminals swiftly and accurately.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Integration](#api-integration)
-- [Blockchain Backend](#blockchain-backend)
-- [Contributors](#contributors)
-- [Contact](#contact)
-- [License](#license)
-
-## Introduction
-
-The Surveillance Bureau project aims to revolutionize the way law enforcement agencies identify and apprehend suspects. By combining advanced technologies such as artificial intelligence and blockchain, we're creating a robust platform that not only detects criminals but also enhances the overall security infrastructure.
-
-Our key features include:
-
-- **Facial Recognition:** We integrate Amazon Rekognition API, a state-of-the-art technology for facial analysis. This allows us to detect and match faces with a high degree of precision, helping law enforcement quickly pinpoint suspects.
-
-- **Biometric Data Matching:** Our system goes beyond facial recognition by incorporating biometric data matching. This means that even if a criminal alters their appearance, our technology can identify them based on unique biometric characteristics.
-
-- **Blockchain Security:** Criminal records are stored on a secure blockchain using the Truffle framework. Contracts are located within the Smart_Contracts folder outside of the React project, ensuring the integrity and immutability of the data.
-
-- **User-Friendly Interface:** We prioritize ease of use, creating an intuitive interface for law enforcement personnel to access and search criminal data efficiently.
-
-- **Vite and React.js Frontend:** We've chosen Vite and React.js to build our frontend, ensuring a seamless and responsive user experience.
-
-Our vision is to empower law enforcement agencies with the tools they need to create safer communities. Join us in this journey of innovation and security enhancement.
-
-## Project Structure
-
+     ```bash
 Surveillance-Bureau/ # Root directory for the entire project
 ├── src/
 │ ├── api/
@@ -96,6 +52,8 @@ Smart_Contracts/
 │ ├── 1_initial_migration.js
 │ ├── 2_deploy_contracts.js
 ├── ...
+     ```
+
 
 ## Features
 
