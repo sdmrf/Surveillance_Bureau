@@ -7,7 +7,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Step2 = () => {
   return (
-    <div className="Step2">
+    <div className="Step2" style={{ height: "100vh" }}>
       <div className="Shape First"></div>
       <div className="Top">
         <div className="Title">

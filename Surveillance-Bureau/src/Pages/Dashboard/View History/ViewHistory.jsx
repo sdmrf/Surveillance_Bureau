@@ -19,22 +19,14 @@ const data = [
 const ViewHistory = () => {
 
   const [slideNumber, setSlideNumber] = useState(0);
-  const SlideRef = useRef();
+  
 
   const slideBack = () => {
-    let dis = SlideRef.current.getBoundingClientRect().x - 448.5
-    if (slideNumber > 0) {
-      setSlideNumber(slideNumber - 1, data.length - 1);
-      SlideRef.current.style.transform = `translateX(${405 + dis}px)`
-    }
+    setSlideNumber(slideNumber > 0 ? slideNumber - 1 : data.length - 1);
   };
 
   const slideFront = () => {
-    let dis = SlideRef.current.getBoundingClientRect().x - 448.5
-    if (slideNumber < data.length - 1) {
-      setSlideNumber(slideNumber + 1, 0);
-      SlideRef.current.style.transform = `translateX(${-400 + dis}px)`
-    }
+    setSlideNumber(slideNumber < data.length - 1 ? slideNumber + 1 : 0);
   };
 
   return (
@@ -53,10 +45,14 @@ const ViewHistory = () => {
           <div className="LeftCard">
             <div className="Top">
               <ArrowBackIosIcon className="arrow left" onClick={slideBack} />
-              <div className="Imgcontainer" ref={SlideRef} >
+              <div className="ImgContainer">
+                <div className="ImgWrapper" style={{transform: `translateX(-${slideNumber * 400}px)`}}>
                 {data.map((item, index) => (
-                  <img src={item} alt="" key={index} />
+                  <div className="Slide" key={index}>
+                      <img src={item} alt="" />
+                  </div>
                 ))}
+                </div>
               </div>
               <ArrowForwardIosIcon className="arrow right" onClick={slideFront} />
             </div>
