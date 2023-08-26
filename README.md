@@ -77,7 +77,7 @@ Follow these instructions to get the project up and running on your local machin
 ### Installation
 
 1. Clone the repository: `git clone https://github.com/sdmrf/Surveillance-Bureau.git`
-2. 3. Navigate to the project directory: `cd SB`
+2. Navigate to the project directory: `cd SB`
 3. Navigate to the parent directory: `cd Surveillance-Bureau`
 5. Install dependencies: `npm install`
 
