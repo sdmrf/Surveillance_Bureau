@@ -36,7 +36,8 @@ Our key features include:
 Our vision is to empower law enforcement agencies with the tools they need to create safer communities. Join us in this journey of innovation and security enhancement.
 
 ## Project Structure
-     ```bash
+```bash
+
 Surveillance-Bureau/ # Root directory for the entire project
 ├── src/
 │ ├── api/
@@ -52,7 +53,8 @@ Smart_Contracts/
 │ ├── 1_initial_migration.js
 │ ├── 2_deploy_contracts.js
 ├── ...
-     ```
+
+```
 
 
 ## Features
@@ -74,7 +76,7 @@ Follow these instructions to get the project up and running on your local machin
 
 ### Installation
 
-1. Clone the repository: `git clone (https://github.com/sdmrf/Surveillance-Bureau.git)`
+1. Clone the repository: `git clone https://github.com/sdmrf/Surveillance-Bureau.git`
 2. 3. Navigate to the project directory: `cd SB`
 3. Navigate to the parent directory: `cd Surveillance-Bureau`
 5. Install dependencies: `npm install`
@@ -82,7 +84,7 @@ Follow these instructions to get the project up and running on your local machin
 ## Usage
 
 1. Start the development server: `npm run dev`
-2. Access the application in your web browser at `(http://localhost:5173/)`
+2. Access the application in your web browser at `http://localhost:5173/`
 
 ## API Integration
 
@@ -155,12 +157,12 @@ Feel free to reach out to us for any inquiries or collaboration opportunities.
 If you have any questions or need further assistance, feel free to reach out to us:
 
 - Email:
-  syedmarufali23@gmail.com
-  pareshdeshpande2178@gmail.com
+- syedmarufali23@gmail.com
+- pareshdeshpande2178@gmail.com
   
 - LinkedIn
-  [Syed Maruf Ali](https://www.linkedin.com/in/syedmarufali/)
-  [Paresh Pradeep Deshpande]
+- [Syed Maruf Ali](https://www.linkedin.com/in/syedmarufali/)
+- [Paresh Pradeep Deshpande]
 
 ## License
 
