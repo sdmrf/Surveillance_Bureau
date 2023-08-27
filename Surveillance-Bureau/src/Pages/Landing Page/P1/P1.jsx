@@ -1,13 +1,11 @@
 import "./P1.scss"
 import Header from "../../../components/Header/Header"
-
 import Bar1 from './Prison/Bar 1.png';
 import Bar2 from './Prison/Bar 2.png';
 import Bar3 from './Prison/Bar 3.png';
 import Bar4 from './Prison/Bar 4.png';
 import Bar5 from './Prison/Bar 5.png';
 import Bar6 from './Prison/Bar 6.png';
-
 import Left from './Prison/Left Hand.png';
 import Right from './Prison/Right Hand.png';
 import { useEffect } from "react";
