@@ -27,6 +27,7 @@ const P2 = () => {
       <div className="Bottom">
         <Link to="/Home" className="Link"><button>GET STARTED</button></Link>
       </div>
+
     </div>
   )
 }

@@ -14,6 +14,7 @@ import ViewHistory from "./Pages/Dashboard/View History/ViewHistory"
 import PreviousCases from "./Pages/Dashboard/View History/PreviousCases/PreviousCases"
 import ViewCases from "./Pages/Dashboard/View History/ViewCases/ViewCases"
 
+
 const Layout = () => {
   return (
     <div className="App">

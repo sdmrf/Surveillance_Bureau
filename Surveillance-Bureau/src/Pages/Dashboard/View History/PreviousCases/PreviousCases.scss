@@ -171,9 +171,10 @@
                                 width: 30px;
                                 height: 30px;
                                 flex: 1;
+                                transition: all 0.3s ease-in-out;
                                 &:hover{
                                     cursor: pointer;
-                                    transform: scale(1.2);
+                                    transform: scale(1.1);
                                     color: #fff;
                                     flex: 1;
                                 }

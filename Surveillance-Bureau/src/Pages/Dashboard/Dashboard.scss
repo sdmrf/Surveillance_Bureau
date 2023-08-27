@@ -1,11 +1,15 @@
+
 .Dashboard{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #212b3b;
 
-    height: 100vh;
+    transition: all 0.7s ease-in-out;
+
+    .Wrapper{
+        
 
     main{
         
@@ -73,6 +77,8 @@
                 background-color: rgba($color: #D65B4A, $alpha: 1);
             }
         }
+    }
+
     }
 
 }
