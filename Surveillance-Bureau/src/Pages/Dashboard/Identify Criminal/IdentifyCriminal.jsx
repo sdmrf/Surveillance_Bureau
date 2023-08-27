@@ -48,7 +48,7 @@ const IdentifyCriminal = () => {
       </div>
 
       <div ref={stepRef}>
-        <Step1  />
+        <Step2  />
       </div>
     </div>
   );

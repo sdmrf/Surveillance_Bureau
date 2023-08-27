@@ -1,6 +1,6 @@
 .PreviousCases {
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     background-color: var(--main-color);
     overflow: hidden;
 
@@ -109,7 +109,7 @@
 
                     .Header {
                         position: absolute;
-                        top: 13%;
+                        top: 18%;
                         width: 90%;
                         height: 40px;
                         background: linear-gradient(135deg, rgba(149, 47, 175, 0.06) 0.02%, rgba(182, 182, 182, 0.14) 0.03%);
@@ -118,13 +118,16 @@
                         border-radius: 50px;
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-around;
                         align-items: center;
 
                         h1 {
                             font-family: var(--font-family);
                             color: lightgray;
                             font-size: 1.2rem;
+                            display: flex;
+                            flex: 1;
+                            align-items: center;
+                            justify-content: center;
                         }
                     }
 
@@ -132,7 +135,7 @@
                         width: 100%;
                         height: 100%;
                         position: relative;
-                        top: 15%;
+                        top: 19%;
                         display: flex;
                         flex-direction: column;
                         gap: 40px;
@@ -145,21 +148,35 @@
                             border-radius: 50px;
                             display: flex;
                             flex-direction: row;
-                            justify-content: space-around;
+                            justify-content: center;
                             align-items: center;
+                           
                             h1{
                                 font-family: var(--font-family);
                                 color: grey;
                                 font-size: 1.2rem;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                
+                            }
+                            .CaseID{
+                               flex: 1.5;
+                            }
+                            .Charges{
+                                flex: 3;
                             }
                             .Icon{
                                 color: lightgray;
                                 width: 30px;
                                 height: 30px;
+                                flex: 1;
+                                transition: all 0.3s ease-in-out;
                                 &:hover{
                                     cursor: pointer;
-                                    transform: scale(1.2);
+                                    transform: scale(1.1);
                                     color: #fff;
+                                    flex: 1;
                                 }
                             }
                         }

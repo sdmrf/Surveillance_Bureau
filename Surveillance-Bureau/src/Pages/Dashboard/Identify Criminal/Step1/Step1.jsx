@@ -3,6 +3,7 @@ import "./Step1.scss"
 import FaceScanning from "../../../../assets/FaceScanning.svg"
 import FaceIdLock from "../../../../assets/FaceIdLock.mp4"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from "react-router-dom"
 
 
 const Step1 = () => {

@@ -1,13 +1,10 @@
 import { useState } from 'react';
 import "./RegisterCriminal.scss";
-
 import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
-
 import { Link } from "react-router-dom";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
