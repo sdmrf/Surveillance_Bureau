@@ -15,8 +15,9 @@
     "@iconscout/react-unicons": "^2.0.2",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
+    "@react-spring/parallax": "^9.7.3",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.420",
+    "@splinetool/runtime": "^0.9.429",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
@@ -24,7 +25,6 @@
     "react-spring": "^9.7.2",
     "sass": "^1.65.1",
     "spline": "^0.0.0"
-
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

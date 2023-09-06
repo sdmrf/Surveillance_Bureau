@@ -1,0 +1,13 @@
+.P5 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video{
+    height: 275px;
+    width: 275px;
+    object-fit: cover;
+  }
+
+}
