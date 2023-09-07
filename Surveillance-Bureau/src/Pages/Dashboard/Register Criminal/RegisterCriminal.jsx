@@ -46,15 +46,15 @@ const RegisterCriminal = () => {
       <ul className="ProgressBar">
         <li className={step === 1 ? 'Active' : ''} onClick={() => setStep(1)}>
           <BadgeOutlinedIcon className="ProgressBarIcon" />
-          Criminal Identification
+          Criminal Information
         </li>
         <li className={step === 2 ? 'Active' : ''} onClick={() => setStep(2)}>
           <HomeOutlinedIcon className="ProgressBarIcon" />
-          Address Details
+          Address Information
         </li>
         <li className={step === 3 ? 'Active' : ''} onClick={() => setStep(3)}>
           <PersonOutlineOutlinedIcon className="ProgressBarIcon" />
-          Additional Identifications
+          Encoding Generation
         </li>
       </ul>
 

@@ -1,9 +1,28 @@
-
+@keyframes come-in {
+  0% {
+    transform: scale(5);
+    filter: blur(10px);
+  }
+  25% {
+    transform: scale(3.75);
+    filter: blur(7.5px);
+  }
+  50% {
+    transform: scale(2.5);
+    filter: blur(5px);
+  }
+  75% {
+    transform: scale(1.25);
+    filter: blur(2.5px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
 .Parallax {
     height: 100vh;
-
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-  
     display: flex;
     flex-direction: column;
   
@@ -15,8 +34,8 @@
       display: flex;
       margin-top: -100px;
       justify-content: space-around;
-  
       height: 100%;
+      animation: come-in 4s ease-in;
   
       .Prison-Bar {
         height: 100%;

@@ -1,18 +1,19 @@
 import './viewCases.scss'
 import mug from '../../../../assets/mug.jpg'
-import crime from '../../../../assets/crime details (1).png'
-import office from '../../../../assets/official details (2).png'
+import crime from '../../../../assets/crime details (3).png'
+import office from '../../../../assets/official details (4).png'
 import court from '../../../../assets/court details (1).png'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useState } from 'react';
 import CrimeDetails from './CrimeDetails'
 import OfficialDetails from './OfficialDetails'
 import CourtDetails from './CourtDetails'
+import { Link } from 'react-router-dom';
 
 const ViewCases = () => {
 
   
-  const [Detail, setDetail] = useState(1);
+  const [Detail, setDetail] = useState(0);
 
 
   const RenderDetails = () => {
@@ -30,7 +31,7 @@ const ViewCases = () => {
   return (
     <div className='Viewcases'>
       <div className="Container">
-        <ArrowBackIcon className='Back'/>
+        <Link to='/dashboard/view-history/previous-cases' className='Back'><ArrowBackIcon className='Back'/></Link>
         <div className="Shape First"></div>
         <div className="Shape Second"></div>
         <div className="Top">

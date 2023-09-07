@@ -13,6 +13,8 @@ import UpdateCriminal from "./Pages/Dashboard/Update Criminal/UpdateCriminal"
 import ViewHistory from "./Pages/Dashboard/View History/ViewHistory"
 import PreviousCases from "./Pages/Dashboard/View History/PreviousCases/PreviousCases"
 import ViewCases from "./Pages/Dashboard/View History/ViewCases/ViewCases"
+import UpdateCriminalInfo from "./Pages/Dashboard/Update Criminal/UpdateInfo/Updatecriminal"
+import AddNewCases from "./Pages/Dashboard/Update Criminal/AddNewCases/Addnewcases"
 
 
 const Layout = () => {
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
   {
     path: "dashboard/view-history/view-cases",
     element: (<ViewCases/>),
+  },
+  {
+    path: "dashboard/update-criminal/UpdateCriminalInfo",
+    element: (<UpdateCriminalInfo/>),
+  },
+  {
+    path: "dashboard/update-criminal/AddNewCases",
+    element: (<AddNewCases/>),
   }
 ]);
 

@@ -2,13 +2,13 @@ import './Sidebar.scss';
 import { Link } from 'react-router-dom';
 
 const sidebarLinks = [
-  { path: '/dashboard', label: 'Dashboard' },
-  { path: '/dashboard/criminals', label: 'Criminals' },
-  { path: '/dashboard/employees', label: 'Officers' },
-  { path: '/dashboard/vehicles', label: 'Vehicles' },
-  { path: '/dashboard/locations', label: 'Locations' },
-  { path: '/dashboard/reports', label: 'Reports' },
-  { path: '/dashboard/incidents', label: 'Incidents' },
+  { path: '/dashboard', label: 'Court Rooms' },
+  { path: '/dashboard/criminals', label: 'Generate FIR' },
+  { path: '/dashboard/employees', label: 'Arrest warrants' },
+  { path: '/dashboard/vehicles', label: 'Evidence & Insights' },
+  { path: '/dashboard/locations', label: 'Station staff' },
+  { path: '/dashboard/reports', label: 'Helpline' },
+  { path: '/dashboard/incidents', label: 'IPC Section' },
   { path: '/dashboard/records', label: 'Records' },
 ];
 

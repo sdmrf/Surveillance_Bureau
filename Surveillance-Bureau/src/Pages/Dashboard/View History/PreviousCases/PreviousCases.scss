@@ -71,6 +71,12 @@
                     height: 50px;
                     left: 40%;
                     color: lightgray;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        color: #fff;
+                    }
                 }
             }
 

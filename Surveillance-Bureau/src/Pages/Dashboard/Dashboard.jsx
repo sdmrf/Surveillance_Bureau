@@ -1,31 +1,39 @@
 import "./Dashboard.scss";
 import DashboardHeader from "./Dashboard Header/DashboardHeader";
 import DashboardContent from "./Dashboard Content/DashboardContent";
-
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
 import PersonAddAlt1OutlinedIcon from "@mui/icons-material/PersonAddAlt1Outlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
 import HistoryIcon from "@mui/icons-material/History";
-
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar";
+import Profilebar from "./ProfileBar/Profilebar"
 import { useState } from "react";
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isProfilebarOpen, setProfilebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  const toggleProfilebar = () => {
+    setProfilebarOpen(!isProfilebarOpen);
+  }
+
   return (
     <div className="Dashboard">
       <Sidebar isOpen={isSidebarOpen} />
+      <Profilebar isOpen={isProfilebarOpen} />
       <div className="Wrapper">
         <DashboardHeader
           isSidebarOpen={isSidebarOpen}
           toggleSidebar={toggleSidebar}
+          isProfilebarOpen={isProfilebarOpen}
+          toggleProfilebar={toggleProfilebar}
         />
+        
         <main className="Main">
           <div className="Cards">
             <Link to="/dashboard/identify-criminal" className="Link">

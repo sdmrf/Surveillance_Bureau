@@ -64,6 +64,16 @@
         display: flex;
         align-items: center;
         gap: 2rem;
-
+        
+        .CloseIcon{
+            width: 40px;
+            height: 40px;
+            color: #ad7be9;
+            cursor: pointer;
+            position: fixed;
+            right: 10%;
+            top: 18px;
+            transition:all 3s ease-in-out;
+        }
     }
 }

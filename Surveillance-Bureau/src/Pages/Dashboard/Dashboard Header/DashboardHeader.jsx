@@ -5,9 +5,10 @@ import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsAc
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import TextScroller from "./TextScroller";
 import SidebarIcon from "../SidebarIcon/SidebarIcon";
+import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 
-const DashboardHeader = ({ isSidebarOpen, toggleSidebar }) => {
+const DashboardHeader = ({ isSidebarOpen, toggleSidebar, isProfilebarOpen, toggleProfilebar }) => {
 
   return (
     <div className="DashboardHeader">
@@ -25,7 +26,8 @@ const DashboardHeader = ({ isSidebarOpen, toggleSidebar }) => {
       <div className="Icons">
         <MarkUnreadChatAltOutlinedIcon className="Icon" />
         <NotificationsActiveOutlinedIcon className="Icon" />
-        <AccountCircleOutlinedIcon className="Icon" />
+        <AccountCircleOutlinedIcon className="Icon" isOpen={isProfilebarOpen} onClick={toggleProfilebar}  />
+        { isProfilebarOpen && <CloseIcon className="CloseIcon" onClick={toggleProfilebar} style={{ zIndex: isProfilebarOpen ? 1010 : 'auto' }} />}
       </div>
     </div>
   );
