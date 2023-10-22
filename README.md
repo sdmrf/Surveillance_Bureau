@@ -158,7 +158,7 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 - Email:
 - syedmarufali23@gmail.com
-- pareshdeshpande2178@gmail.com
+- deshpande.pxresh@gmail.com
   
 - LinkedIn
 - [Syed Maruf Ali](https://www.linkedin.com/in/syedmarufali/)
