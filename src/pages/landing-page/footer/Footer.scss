@@ -1,0 +1,142 @@
+.Footer {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: var(--onyx);
+
+    .Top {
+        --wav1: url('https://i.postimg.cc/43KhFcRw/wave.png');
+        .waves {
+            position: relative;
+            background: var(--onyx);
+            height: 150px;
+            width: 100%;
+        }
+        .waves .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--wav1);
+            background-size: 1000px 100px;
+        }
+        .waves .wave.wave1 {
+            animation: animate 5s linear infinite;
+            opacity: 0.7;
+            animation-delay: 1s;
+        }
+        .waves .wave.wave2 {
+            animation: animate 2s linear infinite;
+            opacity: 0.6;
+            animation-delay: 5s;
+        }
+        .waves .wave.wave3 {
+            animation: animate 2s linear infinite;
+            opacity: 1;
+            animation-delay: 0s;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+        .dark-toggle {
+            position: absolute;
+            z-index: 1000;
+            transform: translate(50%, 50%);
+            border: 1px solid var(--white);
+            background: var(--primary-color);
+            padding: 2px 5px;
+            transition: all 0.5s ease-in-out;
+        }
+        .dark-toggle:hover {
+            border: 1px solid var(--primary-color);
+            padding: 2px 5px;
+            color: var(--primary-color);
+            background-color: var(--white);
+        }
+        a.dark-toggle {
+            color: var(--white);
+            text-decoration: none;
+        }
+        .copyright {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--wild-strawberry);
+            padding: 2px 5px;
+            border-radius: 0 8px 0 8px;
+            text-decoration: none;
+            color: var(--white);
+        }
+    }
+    .Bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 50px;
+        .Up {
+            display: flex;
+            gap: 50px;
+            .Item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: justify;
+                font-size: 14px;
+                font-family: 'Headland One', cursive;
+                opacity: 0.69;
+
+                .Logo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+
+                    .S {
+                        color: var(--raspberry);
+                    }
+                    .B {
+                        color: var(--slate-blue);
+                    }
+
+                    .Icons {
+                        display: flex;
+                        gap: 25px;
+                    }
+                }
+            }
+
+            .Item.Lg {
+                margin-right: 50px;
+                flex: 2;
+            }
+
+            .Item.FQ {
+                flex: 0.5;
+            }
+        }
+
+        .Mid {
+            width: 100%;
+            border: 2px solid var(--white);
+            opacity: 0.699999857;
+        }
+
+        .Down {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

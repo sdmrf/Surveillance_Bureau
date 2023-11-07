@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+body{
+    //Variables
+    --primary-color: #2B2B2B;
+    --main-color: #000;
+    --white: #FFFFFF;
+    --bluish-purple: #6044D8;
+    --lavender: #B6A6F8;
+    --boulder: #7A7A7A;
+    --wild-strawberry: #FF3DA9;
+    --raspberry: #e90064;
+    --slate-blue: #865DFF;
+    --quaternary-color: #FFC947;
+    --onyx: #1A1A1A;
+
+    margin: 0;
+    font-family: 'Headland One', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    .Link{
+        text-decoration: none;
+        color: inherit;
+    }
+}
