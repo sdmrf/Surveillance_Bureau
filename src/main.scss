@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
 body{
     //Variables
+    --main-color : #0b0b0b;
+    --font-family : 'Headland One', sans-serif;
+    --background-color: #2B2B2B;
+    --button-color: #D91B80;
+    --button-color2: #865DFF;
+    --font-color: #EEEEEE;
     --primary-color: #2B2B2B;
     --main-color: #000;
     --white: #FFFFFF;
@@ -9,7 +15,6 @@ body{
     --boulder: #7A7A7A;
     --wild-strawberry: #FF3DA9;
     --raspberry: #e90064;
-    --slate-blue: #865DFF;
     --quaternary-color: #FFC947;
     --onyx: #1A1A1A;
 

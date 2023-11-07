@@ -1,8 +1,9 @@
 import "./Identification.scss";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import Spinner from "./Spinner/Spinner";
+import Spinner from "../Spinner/Spinner";
 
 const Identification = ({isLFDLoaded, isVideoOn, vidHeight, vidWidth, canvasRef, videoRef, criminalId, handleFaceRecognition, startWebcam, closeWebcam, copyTextToClipboard }) => {
+
   return (
     <div className="Identification">
       {isLFDLoaded ? (

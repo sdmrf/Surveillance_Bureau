@@ -1,8 +1,11 @@
 import React from 'react'
+import RegisterComplaints from "./register-complaint/RegisterComplaint"
 
 const Complaints = () => {
   return (
-    <div>complaints</div>
+    <div >
+      <RegisterComplaints />
+    </div>
   )
 }
 

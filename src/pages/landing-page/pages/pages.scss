@@ -1,597 +1,297 @@
-@keyframes come-in {
-  0% {
-    transform: scale(5);
-    filter: blur(10px);
-  }
-  25% {
-    transform: scale(3.75);
-    filter: blur(7.5px);
-  }
-  50% {
-    transform: scale(2.5);
-    filter: blur(5px);
-  }
-  75% {
-    transform: scale(1.25);
-    filter: blur(2.5px);
-  }
-  100% {
-    transform: scale(1);
-    filter: blur(0px);
-  }
-}
+//Page 1 Scss
 
-.Page1 {
+.Particle {
   height: 100vh;
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-
-  .Parallax-Container {
-    display: flex;
-    margin-top: -100px;
-    justify-content: space-around;
-    height: 100%;
-    animation: ease-in-out 4s ease-in;
-
-    .Prison-Bar {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      &.Bar-1 {
-        z-index: 1;
-      }
-
-      &.Bar-2 {
-        position: relative;
-
-        .LH {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-58%, -47%);
-
-          height: 100%;
-          width: 100%;
-        }
-      }
-
-      &.Bar-4 {
-        position: relative;
-
-        .RH {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-45%, -48%);
-
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .Logo {
-    font-style: inherit;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: auto all;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    z-index: 2;
-    font-weight: 100;
-    color: var(--white);
-    font-size: 3rem;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.66);
-
-    .S {
-      color: var(--raspberry);
-    }
-
-    .B {
-      color: var(--slate-blue);
-    }
-  }
-}
-
-.Page2 {
-  height: 100vh;
-  background-image: url("/assets/mainBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  width: 100vw;
+  background-color: var(--main-color);
 
   .Top {
+    padding: 50px 50px;
     display: flex;
-
-    .Spline {
-      position: relative;
-      left: 5%;
-    }
-  }
-
-  .Main {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 50px;
+    justify-content: space-between;
+    height: 70px;
 
-    .Left {
-      .Text {
-        display: block;
-        width: 550px;
-
-        h1 {
-          font-size: 50px;
-          font-weight: 800;
-          margin-bottom: 20px;
-          font-family: var(--font-family);
-
-          /** TEXT GRADIENT */
-          color: #fff;
-          background-image: -webkit-linear-gradient(
-            0deg,
-            #ffffff 0%,
-            #a5a5a5 100%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          text-fill-color: transparent;
-          -webkit-text-fill-color: transparent;
+    .Logo {
+      width: 10px;
+    }
+    .Buttons {
+      padding-right: 75px;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      .Button {
+        background-color: var(--button-color);
+        font-family: var(--font-family);
+        border: none;
+        color: var(--font-color);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid var(--button-color);
+        }
+      }
+      .Button2{
+        background-color: transparent;
+        font-family: var(--font-family);
+        border: 1px solid var(--button-color);
+        color: var(--font-color);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid var(--button-color);
         }
       }
     }
+  }
 
-    .Right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .Mid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 175px;
+    height: 150px;
+    .Text {
+      display: block;
+      text-align: center;
+      width: 750px;
+      font-family: Josefin Sans,sans-serif;
+      color: var(--font-color);
+      font-size: 1.6rem;
 
-      img {
-        width: 400px;
+      span{
+        color: var(--button-color2);
       }
     }
-  }
-  .Bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    p{
+      display: block;
+      text-align: center;
+      width: 750px;
+      font-family: Josefin Sans,sans-serif;
+      color: var(--font-color);
+      font-size: 1.2rem;
+      opacity: 0.7;
+      font-weight: 300;
+    }
+    .Buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        .button{
+            background-color: var(--button-color);
+            font-family: var(--font-family);
+            border: none;
+            color: var(--font-color);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button2{
+            background-color: transparent;
+            font-family: var(--font-family);
+            border: solid 2px var(--button-color2);
+            color: var(--font-color);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
 
-    button {
-      width: 200px;
-      height: 50px;
-      border-radius: 50px;
-      border: none;
-      background-color: rgba($color: #6044d8, $alpha: 0.7);
-      color: #fff;
-      font-size: 20px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        background-color: rgba($color: #6044d8, $alpha: 1);
-        scale: 1.1;
-      }
+            &:hover{
+                background-color: var(--button-color2);
+            }
+        }
     }
   }
 }
+
+
+//Page 3 Scss
 
 .Page3 {
   height: 100vh;
-  background-color: var(--onyx);
-  position: relative;
-  overflow: hidden;
-
+  width: 100vw;
+  background-color: var(--main-color) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .Container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-
-    .Shape {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      border-radius: 300px;
-    }
-
-    .Shape.First {
-      left: -90px;
-      top: -100px;
-      background: linear-gradient(
-        90deg,
-        rgba(120, 20, 87, 0.49) 2.6%,
-        #ff3da9 100%
-      );
-      box-shadow: 0px 0px 1.6799999475479126px 0px #d91b80,
-        0px 0px 3.359999895095825px 0px #d91b80,
-        0px 0px 11.760000228881836px 0px #d91b80,
-        0px 0px 23.520000457763672px 0px #d91b80,
-        0px 0px 40.31999969482422px 0px #d91b80,
-        0px 0px 70.55999755859375px 0px #d91b80;
-    }
-
-    .Shape.Second {
-      left: 1375px;
-      top: -100px;
-      background: linear-gradient(
-        68deg,
-        #b0c7e8 0%,
-        rgba(160, 132, 220, 0.91) 53.13%,
-        rgba(111, 99, 193, 0.98) 84.9%,
-        #645cbb 100%
-      );
-      box-shadow: 0px 0px 1.6799999475479126px 0px #ae97dd,
-        0px 0px 3.359999895095825px 0px #ae97dd,
-        0px 0px 11.760000228881836px 0px #ae97dd,
-        0px 0px 23.520000457763672px 0px #ae97dd,
-        0px 0px 40.31999969482422px 0px #ae97dd,
-        0px 0px 70.55999755859375px 0px #ae97dd;
-    }
-
-    .Shape.Third {
-      left: 400px;
-      background: linear-gradient(
-        68deg,
-        rgba(55, 78, 198, 0.85) 0%,
-        rgba(132, 167, 220, 0.77) 53.13%,
-        rgba(11, 35, 121, 0.85) 100%
-      );
-      box-shadow: 0px 0px 1.6799999475479126px 0px #ae97dd,
-        0px 0px 3.359999895095825px 0px #ae97dd,
-        0px 0px 11.760000228881836px 0px #ae97dd,
-        0px 0px 23.520000457763672px 0px #ae97dd,
-        0px 0px 40.31999969482422px 0px #ae97dd,
-        0px 0px 70.55999755859375px 0px #ae97dd;
-    }
-
-    .Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    .Left {
+      height: 450px;
+      width: 350px;
+      background-color: transparent;
+      border: solid 1px var(--button-color2);
       display: flex;
       flex-direction: column;
-      position: absolute;
-      top: 3%;
-      left: 6.1%;
-
-      .Top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .Left {
-          display: flex;
-          flex-direction: row;
-          width: 850px;
-          height: 325px;
-          border-radius: 50px;
-          border: 3px solid rgba(0, 0, 0, 0.5);
-          background: rgba(68, 111, 222, 0.3);
-          box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(22.5px);
-          --webkit-backdrop-filter: blur(22.5px);
-          margin-right: 20px;
-          margin-bottom: 10px;
-
-          .Explore {
-            h1 {
-              font-family: "Headland One", cursive;
-              position: relative;
-              left: 100px;
-              top: 20px;
-              color: rgba(224, 224, 224, 0.9);
-              font-size: 40px;
-              font-style: normal;
-              font-weight: 500;
-
-              .S {
-                color: #e90064;
-              }
-
-              .B {
-                color: #865dff;
-              }
-            }
-
-            h2 {
-              display: block;
-              width: 319px;
-              font-family: "Headland One", cursive;
-              position: relative;
-              left: 100px;
-              top: 10px;
-              color: rgba(224, 224, 224, 0.9);
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 400;
-            }
-
-            Button {
-              font-family: "Inter", sans-serif;
-              font-size: 25px;
-              font-weight: 500;
-              color: lightgray;
-              background-color: rgba($color: #6044d8, $alpha: 0.7);
-              border: 3px solid #6044d8;
-              padding: 5px 27.5px 5px 27.5px;
-              border-radius: 50px;
-              position: relative;
-              top: 15px;
-              left: 205px;
-              cursor: pointer;
-              transition: all 0.3s ease-in-out;
-
-              &:hover {
-                color: #fff;
-                cursor: pointer;
-                background-color: rgba($color: #6044d8, $alpha: 1);
-                scale: 1.1;
-              }
-            }
-          }
-
-          .Logo {
-            .Icon {
-              position: relative;
-              top: 50px;
-              left: 100px;
-            }
-
-            .React{
-              height: 100px;
-              width: 100px;
-              position: relative;
-              top: 20px;
-              left: 120px;
-            }
-
-            .Eth {
-              position: relative;
-              top: 70px;
-              left: 100px;
-            }
-
-            .oc {
-              width: 90px;
-              height: 100px;
-              position: relative;
-              top: 150px;
-              left: -125px;
-            }
-          }
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 1px var(--button-color2);
+        object-fit: cover;
+      }
+      h1 {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.5rem;
+        font-weight: 300;
+        .p {
+          color: var(--button-color);
         }
-
-        .Right {
-          width: 450px;
-          height: 325px;
-          border-radius: 50px;
-          border: 3px solid rgba(0, 0, 0, 0.5);
-          background: rgba(68, 111, 222, 0.3);
-          box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(22.5px);
-          --webkit-backdrop-filter: blur(22.5px);
-
-          .Pfp_container {
-            position: relative;
-            left: 43%;
-            top: 20px;
-
-            img {
-              width: 75px;
-              height: 75px;
-              border-radius: 50px;
-              object-fit: cover;
-            }
-          }
-
-          h1 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 110px;
-            top: 30px;
-            color: rgba(224, 224, 224, 0.9);
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 500;
-
-            .S {
-              color: #e90064;
-            }
-
-            .B {
-              color: #865dff;
-            }
-          }
-
-          h2 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 100px;
-            top: 30px;
-            color: rgba(224, 224, 224, 0.9);
-            opacity: 0.6999998507;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-          }
-
-          h3 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 5px;
-            top: 50px;
-            color: rgba(224, 224, 224, 0.9);
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 400;
-            text-align: center;
-          }
+        .d {
+          color: var(--button-color2);
         }
       }
-
-      .Bottom {
+      .Post {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        opacity: 0.7;
+        text-shadow: 1px 1px var(--button-color);
+      }
+      .slogan {
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.4rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .SocialMedia {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-
-        .Left {
-          width: 450px;
-          height: 325px;
-          border-radius: 50px;
-          border: 3px solid rgba(0, 0, 0, 0.5);
-          background: rgba(68, 111, 222, 0.3);
-          box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(22.5px);
-          --webkit-backdrop-filter: blur(22.5px);
-
-          .Pfp_container {
-            position: relative;
-            left: 43%;
-            top: 20px;
-
-            img {
-              width: 75px;
-              height: 75px;
-              border-radius: 50px;
-              object-fit: cover;
-            }
-          }
-
-          h1 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 110px;
-            top: 30px;
-            color: rgba(224, 224, 224, 0.9);
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 500;
-
-            .S {
-              color: #e90064;
-            }
-
-            .M {
-              color: #865dff;
-            }
-
-            .A {
-              color: #3751c3;
-            }
-          }
-
-          h2 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 100px;
-            top: 30px;
-            color: rgba(224, 224, 224, 0.9);
-            opacity: 0.6999998507;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-          }
-
-          h3 {
-            font-family: "Headland One", cursive;
-            position: relative;
-            left: 5px;
-            top: 50px;
-            color: rgba(224, 224, 224, 0.9);
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 400;
+        gap: 25px;
+      }
+    }
+    .Mid {
+      height: 500px;
+      width: 500px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     justify-content: center;
+      h1{
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 2.8rem;
+        font-weight: 300;
+        .s {
+          color: var(--button-color);
+        }
+        .b {
+          color: var(--button-color2);
+        }
+      }
+      p{
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.2rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .Buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding-top: 25px;
+        .button{
+            background-color: var(--button-color);
+            font-family: var(--font-family);
+            border: none;
+            color: var(--font-color);
+            padding: 8px 16px;
             text-align: center;
-          }
+            font-size: 1.3rem;
+            border-radius: 8px;
+            cursor: pointer;
         }
+        .button2{
+            background-color: transparent;
+            font-family: var(--font-family);
+            border: solid 2px var(--button-color2);
+            color: var(--font-color);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            cursor: pointer;
 
-        .Right {
-          width: 850px;
-          height: 325px;
-          border-radius: 50px;
-          border: 3px solid rgba(0, 0, 0, 0.5);
-          background: rgba(68, 111, 222, 0.3);
-          box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(22.5px);
-          --webkit-backdrop-filter: blur(22.5px);
-          display: flex;
-          flex-direction: row;
-
-          .Text {
-            display: flex;
-            flex-direction: column;
-
-            .Heading {
-              h1 {
-                position: relative;
-                left: 25px;
-                display: block;
-                width: 550px;
-                color: rgba(224, 224, 224, 0.9);
-                font-style: normal;
-                font-weight: 400;
-              }
+            &:hover{
+                background-color: var(--button-color2);
             }
-
-            .bottom {
-              display: flex;
-              flex-direction: row;
-              position: relative;
-              left: 25px;
-
-              .Info {
-                display: block;
-                width: 150px;
-                font-family: var(--font-family);
-                font-size: 15px;
-                color: rgba(224, 224, 224, 0.9);
-
-                h1 {
-                  color: gray;
-                  font-size: 25px;
-                }
-
-                span {
-                  color: lightgray;
-                }
-              }
-            }
-          }
-
-          .Fbi {
-            display: flex;
-            flex-direction: column;
-            margin-left: 30px;
-
-            img {
-              margin-top: 7.5px;
-              width: 220px;
-              height: 150px;
-              border-radius: 25px;
-              object-fit: cover;
-              margin-bottom: 10px;
-            }
-
-            img {
-              width: 220px;
-              height: 150px;
-              border-radius: 25px;
-              object-fit: cover;
-            }
-          }
         }
+    }
+      
+    }
+    .Right {
+      height: 450px;
+      width: 350px;
+      background-color: transparent;
+      border: solid 1px var(--button-color2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 1px var(--button-color2);
+        object-fit: cover;
+      }
+      h1 {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.5rem;
+        font-weight: 300;
+        .s {
+          color: var(--button-color);
+        }
+        .m {
+          color: var(--button-color2);
+        }
+        .a {
+          color: var(--button-color);
+        }
+      }
+      .Post {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        opacity: 0.7;
+        text-shadow: 1px 1px var(--button-color);
+      }
+      .slogan {
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.4rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .SocialMedia {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
       }
     }
   }

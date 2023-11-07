@@ -8,7 +8,7 @@ const profilebarLinks = [
   { path: '/dashboard/criminals', label: 'Change Admin' },
   { path: '/dashboard/employees', label: 'Enroll new Officer' },
   { path: '/dashboard/vehicles', label: 'Settings' },
-  { path: '/', label: 'Logout' },
+  { path: '/SurveillanceBureau', label: 'Logout' },
 ];
 
 const Profilebar = ({ isOpen }) => {

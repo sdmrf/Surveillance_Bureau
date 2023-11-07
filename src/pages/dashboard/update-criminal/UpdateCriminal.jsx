@@ -27,7 +27,6 @@ const UpdateCriminal = () => {
           </Link>
           <div className="img" >
             {!isSlide && <img src={mug} alt="" onClick={() => setIsSlide(!isSlide)}/>}
-             
             {isSlide && 
             <div className="Contain">
               <Link to="/SurveillanceBureau/dashboard/update-criminal/update-criminal-info/UpdateInfo" className="Header">

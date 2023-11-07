@@ -1,83 +1,73 @@
+import React from "react";
 import "./pages.scss";
-import Pfp from "/assets/pareshPfp.png";
-import Pfp1 from "/assets/marufPfp.png";
-import fbi1 from "/assets/fbiBuildingImg.jpeg";
-import fbi2 from "/assets/fbiBuildingImg2.jpeg";
-import EthereumLogo from "/assets/ethereumLogo.svg";
-import opencvLogo from "/assets/openCvLogo.png";
-import reactLogo from "/assets/reactLogo.png";
+import pfp from "./Assets/PFP 1.jpg";
+import pfp1 from "./Assets/mrfPfp.jpg";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Page3 = () => {
   return (
     <div className="Page3">
       <div className="Container">
-        <div className="Shape First"></div>
-        <div className="Shape Second"></div>
-        <div className="Shape Third"></div>
-        <div className="Wrapper">
-          <div className="Top">
-            <div className="Left">
-              <div className="Explore">
-                <h1><span className="S">S</span>urveillance <span className="B">B</span>ureau</h1>
-                <h2>Experience the ecstasy and be a part of this mission to help our law enforcement to fight against social evils !</h2>
-                <button className="Button">Explore</button>
-              </div>
-              <div className="Logo">
-                  <img className="React" src={reactLogo} alt="react" />
-                 <img className="Eth" src={EthereumLogo} alt="eth" />
-                 <img className="oc" src={opencvLogo} alt="oc" />
-              </div>
-              
-            </div>
-            <div className="Right">
-              <div className="Pfp_container">
-                <img src={Pfp} alt="pfp" />
-              </div>
-              <h1><span className="S">P</span>aresh <span className="B">D</span>eshpande</h1>
-              <h2>Founder / Developer / Ui designer</h2>
-              <h3>“We live and breathe software development”</h3>
-            </div>
+        <div className="Left">
+          <img src={pfp} alt="" />
+          <h1>
+            <span className="p">P</span>aresh <span className="d">D</span>
+            eshpande
+          </h1>
+          <p className="Post">Founder/ Developer/ UI designer</p>
+          <p className="slogan">“We live and breathe software development”</p>
+          <div className="SocialMedia">
+            <InstagramIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <TwitterIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <LinkedInIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <GitHubIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
           </div>
-          <div className="Bottom">
-            <div className="Left">
-              <div className="Pfp_container">
-                <img src={Pfp1} alt="pfp" />
-              </div>
-              <h1><span className="S">S</span>yed <span className="M">M</span>aruf <span className="A">A</span>li</h1>
-              <h2>Founder / Developer / Ui designer</h2>
-              <h3>“Eat Sleep Develop Repeat”</h3>
-            </div>
-            <div className="Right">
-              <div className="Text">
-                <div className="Heading">
-                  <h1>
-                    We provide an Integrated platform for Intelligence, Investigation, and Crime bureaus !</h1>
-                </div>
-                <div className="bottom">
-                  <div className="Info">
-                    <h1>25 M+</h1>
-                    <span>Criminals Recognized</span>
-                  </div>
-                  <div className="Info">
-                    <h1>5 M+</h1>
-                    <span>Security offices covered</span>
-                  </div>
-                  <div className="Info">
-                    <h1>69 M+</h1>
-                    <span>Criminals Registered</span>
-                  </div>
-                </div>
-              </div>
-              <div className="Fbi">
-                <img src={fbi1} alt="fbi" />
-                <img src={fbi2} alt="fbi" />
-              </div>
-            </div>
+        </div>
+        <div className="Mid">
+          <h1><span className="s">S</span>urveillance <span className="b">B</span>ureau</h1>
+          <p>Experience the ecstasy and be a part of this mission to help our law enforcement to fight against social evils !</p>
+          <div className="Buttons">
+            <button className="button">Explore</button>
+            <button className="button2">About</button>
+          </div>
+        </div>
+        <div className="Right">
+          <img src={pfp1} alt="" />
+          <h1>
+            <span className="s">S</span>yed <span className="m">M</span>aruf{" "}
+            <span className="a">A</span>li
+          </h1>
+          <p className="Post">Founder/ Developer/ UI designer</p>
+          <p className="slogan">“Eat Sleep Develop Repeat”</p>
+          <div className="SocialMedia">
+            <InstagramIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <TwitterIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <LinkedInIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
+            <GitHubIcon
+              style={{ color: "var(--font-color)", fontSize: "35px" }}
+            />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page3
+export default Page3;

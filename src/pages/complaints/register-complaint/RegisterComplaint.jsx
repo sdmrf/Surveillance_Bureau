@@ -1,7 +1,7 @@
 import "./RegisterComplaint.scss";
-import RC from "../../../assets/RegisterComplaint.svg";
+import RC from "../Assets/RegisterComplaint.svg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import user from "../../../assets/user.svg";
+import user from "../Assets/user.svg";
 import { Link } from "react-router-dom";
 
 const RegisterComplaint = () => {
@@ -9,7 +9,7 @@ const RegisterComplaint = () => {
     <div className="RegisterComplaint">
       <div className="Shape First"></div>
       <div className="Shape Second"></div>
-      <Link to="/">
+      <Link to="/SurveillanceBureau">
         <ArrowBackIcon className="Back" />
       </Link>
       <div className="Wrapper">

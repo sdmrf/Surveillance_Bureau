@@ -1,67 +1,135 @@
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim"; 
 import "./pages.scss";
-import { useEffect } from "react";
-
-//Pages
-import Header from "../header/Header";
-import Bar1 from '../prison/Bar 1.png';
-import Bar2 from '../prison/Bar 2.png';
-import Bar3 from '../prison/Bar 3.png';
-import Bar4 from '../prison/Bar 4.png';
-import Bar5 from '../prison/Bar 5.png';
-import Bar6 from '../prison/Bar 6.png';
-import Left from '../prison/Left Hand.png';
-import Right from '../prison/Right Hand.png';
+import Spline from '@splinetool/react-spline';
+import { Link } from "react-router-dom";
 
 const Page1 = () => {
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadSlim(engine);
+  }, []);
 
-  useEffect(() => {
-    const bars = document.querySelectorAll('.Prison-Bar');
-    const handleScroll = () => {
-        bars.forEach((bar) => {
-            const scrollOffset = window.scrollY;
-            const speed = 0.5; 
-            const yPos = -(scrollOffset * speed);
-            bar.style.transform = `translateY(${yPos}px)`;
-        });
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    };
-}, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
+  const Options = {
+    fpsLimit: 120,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: "push",
+        },
+        onHover: {
+          enable: true,
+          mode: "repulse",
+        },
+        resize: true,
+      },
+      modes: {
+        push: {
+          quantity: 4,
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: "#AE97DD",
+      },
+      links: {
+        color: "#ffffff",
+        distance: 150,
+        enable: false,
+        opacity: 0.5,
+        width: 1,
+      },
+      size: {
+        anim: {
+          enable: true,
+          speed: 4,
+          size_min: 0.1,
+        },
+        value: { min: 1, max: 4 },
+      },
+      move: {
+        direction: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: false,
+        speed: 1,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 1000,
+        },
+        value: 80,
+      },
+      opacity: {
+        value: 1,
+        anim: {
+          enable: true,
+          speed: 4,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      shape: {
+        type: "circle",
+      },
+    },
+  }
 
   return (
-    <div className="Page1">
-      <Header />
-      <div className="Parallax-Container">
-        <div className="Prison-Bar Bar-1">
-          <img src={Bar1} alt="prison bars" />
-        </div>
-        <div className="Prison-Bar Bar-2">
-          <img src={Bar2} className="B2" alt="prison bars" />
-          <img src={Left} className="LH" alt="Left Hand" />
-        </div>
-        <div className="Prison-Bar Bar-3">
-          <img src={Bar3} alt="prison bars" />
-        </div>
-        <div className="Prison-Bar Bar-4">
-          <img src={Bar4} alt="prison bars" />
-          <img src={Right} className="RH" alt="Right Hand" />
-        </div>
-        <div className="Prison-Bar Bar-5">
-          <img src={Bar5} alt="prison bars" />
-        </div>
-        <div className="Prison-Bar Bar-6">
-          <img src={Bar6} alt="prison bars" />
-        </div>
-      </div>
+    <div className="Particle">
+    <Particles
+      style={{width: "100vw", height: "100vh"}}
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={Options}
+    />
+    
+    <div className="Top">
       <div className="Logo">
-        <h1>
-          <span className="S">S</span>urveillance <span className="B">B</span>
-          ureau
-        </h1>
+      <Spline className="Spline" scene="https://prod.spline.design/uXYZOyWocYfl63Va/scene.splinecode"/>
+      </div>
+      <div className="Buttons">
+        <Link to="/SurveillanceBureau/complaints"> <button className="Button">
+          Complaints
+        </button></Link>
+        <button className="Button2">
+          About
+        </button>
       </div>
     </div>
+    <div className="Mid"> 
+      <div className="Text">
+        <h1>Revolutionizing <span>Law Enforcement!</span></h1>
+        <p>Elevating the Integrity of National Security by Harnessing the Power of AI Face Recognition and Leveraging the Unparalleled Transparency of Blockchain Technology, Pioneering the Path to a Safer Society.</p>
+      </div>
+      <div className="Buttons">
+        <Link to={"/SurveillanceBureau/home"}>
+        <button className="button">
+          Get Started
+        </button></Link>
+        
+        <button className="button2">
+          Learn More
+        </button>
+      </div>
+    </div>
+     </div>
   );
 };
 

@@ -59,7 +59,7 @@
                     font-size: 1.2rem;
                     color: #b5b5b5;
                     display: block;
-                    width: 350px;
+                    width: 450px;
                 }
             }
 
@@ -68,12 +68,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 100%;
-                    width: 100%;
 
                     img{
-                        width: 800px;
-                        height: 100%;
+                        width: 600px;
+                        height: 400px;
                         mix-blend-mode: exclusion;
                     }
                 }
@@ -86,6 +84,7 @@
             align-items: center;
             flex-direction: column;
             gap: 50px;
+            padding-top: 50px;
 
             .Logo{
 

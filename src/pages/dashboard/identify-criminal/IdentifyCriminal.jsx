@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import IdentifyIllustration from "/assets/identifyIllustration.svg";
 import Step1 from "./Step1/Step1";
 import Step2 from "./Step2/Step2";
+import Identification from "./Identification/Identification"
 
 const IdentifyCriminal = () => {
   const stepRef = useRef(null);
