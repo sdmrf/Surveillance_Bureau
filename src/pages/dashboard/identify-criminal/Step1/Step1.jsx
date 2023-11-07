@@ -28,9 +28,11 @@ const Step1 = () => {
               <video src={FaceIdLock} autoPlay loop muted />
             </div>
             <div className="Bottom">
+            <Link to="/SurveillanceBureau/dashboard/identify-criminal/Identification" className="Link">
               <button>Scan
-                <ArrowForwardIcon />
+                  <ArrowForwardIcon />
               </button>
+            </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./RegisterCriminal.scss";
-import user from "/assets/userIcon.svg";
+import user from "/assets/userIcon.svg"
 import AddIcon from '@mui/icons-material/Add';
 import CheckIcon from '@mui/icons-material/Check';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
