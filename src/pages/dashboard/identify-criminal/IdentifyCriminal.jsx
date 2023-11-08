@@ -46,9 +46,8 @@ const IdentifyCriminal = () => {
           <div className="Scroll" onClick={scrollToStep1}></div>
         </div>
       </div>
-
       <div ref={stepRef}>
-        <Step1  />
+        <Step1 />
       </div>
     </div>
   );

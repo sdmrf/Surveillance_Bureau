@@ -153,6 +153,7 @@ const detectAndRecognizeFaces = async (video, canvas, labeledFaceDescriptors, di
       );
   canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
   faceapi.draw.drawDetections(canvas, resizedDetections);
+  faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
 
   const results = resizedDetections.map((d) => {
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.5);

@@ -8,29 +8,19 @@ const ViewHistory = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [criminal, setCriminal] = useState(null);
 
-  const slideBack = () => {
-    setSlideNumber(
-      slideNumber > 0 ? slideNumber - 1 : (criminal && criminal.mugshots.length - 1) || 0
-    );
-  };
-
-  const slideFront = () => {
-    setSlideNumber(
-      slideNumber < (criminal && criminal.mugshots.length - 1) || 0
-    );
-  };
-
   useEffect(() => {
-    const buttons = document.querySelectorAll(".card-buttons button");
-    const sections = document.querySelectorAll(".card-section");
-    const card = document.querySelector(".card");
-
     const handleButtonClick = (e) => {
       const targetSection = e.target.getAttribute("data-section");
+      const card = document.querySelector(".card");
+      const sections = document.querySelectorAll(".card-section");
+      const buttons = document.querySelectorAll(".card-buttons button");
       const section = document.querySelector(targetSection);
-      targetSection !== "#about"
-        ? card.classList.add("is-active")
-        : card.classList.remove("is-active");
+
+      if (targetSection !== "#about") {
+        card.classList.add("is-active");
+      } else {
+        card.classList.remove("is-active");
+      }
       card.setAttribute("data-state", targetSection);
       sections.forEach((s) => s.classList.remove("is-active"));
       buttons.forEach((b) => b.classList.remove("is-active"));
@@ -38,6 +28,7 @@ const ViewHistory = () => {
       section.classList.add("is-active");
     };
 
+    const buttons = document.querySelectorAll(".card-buttons button");
     buttons.forEach((btn) => {
       btn.addEventListener("click", handleButtonClick);
     });
@@ -48,7 +39,19 @@ const ViewHistory = () => {
         btn.removeEventListener("click", handleButtonClick);
       });
     };
-  }, []);
+  }, );
+
+  const slideBack = () => {
+    setSlideNumber(
+      slideNumber > 0 ? slideNumber - 1 : criminal.mugshots.length - 1
+    );
+  };
+
+  const slideFront = () => {
+    setSlideNumber(
+      slideNumber < criminal.mugshots.length - 1 ? slideNumber + 1 : 0
+    );
+  };
 
   return (
     <>
@@ -74,7 +77,7 @@ const ViewHistory = () => {
             <div className="card-main">
               <div className="card-section is-active" id="about">
                 <div className="card-content enter">
-                  <div className="card-subtitle">ABOUT</div>
+                  <div className="card-subtitle">Personal Info :</div>
                   <p className="card-desc">
                     <span>D.O.B :</span> {criminal[1].dob}
                   </p>
@@ -85,49 +88,42 @@ const ViewHistory = () => {
                     <span>Aadhar Number :</span> {criminal[1].aadharNumber}
                   </p>
                   <p className="card-desc">
-                  <span>Relative Name :</span> {criminal[1].relativeName}
+                    <span>Relative Name :</span> {criminal[1].relativeName}
                   </p>
                   <p className="card-desc">
-                  <span>Relative Phone :</span> {criminal[1].relativeMobileNumber}
+                    <span>Relative Phone :</span>{" "}
+                    {criminal[1].relativeMobileNumber}
                   </p>
                 </div>
               </div>
-              <div className="card-section" id="experience">
+              <div className="card-section SliderX" id="experience">
                 <div className="card-content">
-                  <div className="card-subtitle">WORK EXPERIENCE</div>
-                  <div className="card-timeline">
-                    <div className="card-item" data-year="2014">
-                      <div className="card-item-title">
-                        Front-end Developer at <span>JotForm</span>
-                      </div>
-                      <div className="card-item-desc">
-                        Disrupt stumptown retro everyday carry unicorn.
-                      </div>
-                    </div>
-                    <div className="card-item" data-year="2016">
-                      <div className="card-item-title">
-                        UI Developer at <span>GitHub</span>
-                      </div>
-                      <div className="card-item-desc">
-                        Developed new conversion funnels and disrupt.
-                      </div>
-                    </div>
-                    <div className="card-item" data-year="2018">
-                      <div className="card-item-title">
-                        Illustrator at <span>Google</span>
-                      </div>
-                      <div className="card-item-desc">
-                        Onboarding illustrations for App.
+                  <div className="Slider">
+                    <ArrowBackIosIcon
+                      className="arrow left"
+                      onClick={slideBack}
+                    />
+                    <div className="ImgContainer">
+                      <div
+                        className="ImgWrapper"
+                        style={{
+                          transform: `translateX(-${slideNumber * 100}%)`,
+                        }}
+                      >
+                        {criminal.mugshots.map((mugshot, index) => (
+                          <div className="Slide" key={index}>
+                            <img
+                              src={`https://ipfs.io/ipfs/${mugshot}`}
+                              alt="mugshot"
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
-                    <div className="card-item" data-year="2020">
-                      <div className="card-item-title">
-                        Full-Stack Developer at <span>CodePen</span>
-                      </div>
-                      <div className="card-item-desc">
-                        Responsible for the encomposing brand expreience.
-                      </div>
-                    </div>
+                    <ArrowForwardIosIcon
+                      className="arrow right"
+                      onClick={slideFront}
+                    />
                   </div>
                 </div>
               </div>

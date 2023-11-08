@@ -21,7 +21,8 @@
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
     display: flex;
     transition: 0.3s;
     flex-direction: column;
@@ -49,7 +50,7 @@
   }
 
   .card[data-state="#experience"] {
-    height: 550px;
+    height: 450px;
   }
 
   .card.is-active {
@@ -193,6 +194,7 @@
       border: 2px dashed rgba(81, 106, 204, 1);
       font-size: 16px;
       outline: none;
+      background: none;
     }
 
     .Fetch {
@@ -213,7 +215,7 @@
       font-family: "Jost", sans-serif;
       transition: 0.3s;
 
-      &:active{
+      &:active {
         transform: scale(0.9);
       }
     }
@@ -227,6 +229,66 @@
 
   .card-content {
     padding: 20px;
+
+    .Slider {
+      height: 200px;
+      width: 100%;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+
+      .ImgContainer {
+        height: 100%;
+        min-width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .ImgWrapper {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          transition: transform 0.75s ease-in-out;
+
+          .Slide {
+            min-width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .arrow {
+        width: 50px;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.5));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(10px);
+        color: rgba($color: #ffffff, $alpha: 0.75);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.05),
+          inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        cursor: pointer;
+
+        &.left {
+          position: relative;
+          border-radius: 5px 0px 0px 5px;
+          left: 50px;
+        }
+
+        &.right {
+          position: relative;
+          border-radius: 0px 5px 5px 0px;
+          right: 50px;
+        }
+      }
+    }
 
     &.enter {
       width: 500px;
@@ -242,7 +304,7 @@
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
 
-    span{
+    span {
       font-weight: 500;
       color: var(--onyx);
     }
@@ -286,7 +348,9 @@
 
   .card-buttons {
     display: flex;
-    background-color: #fff;
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+
     margin-top: auto;
     position: sticky;
     bottom: 0;
@@ -323,6 +387,10 @@
 
   .card-section {
     display: none;
+
+    &.SliderX {
+      padding-top: 35px;
+    }
     &.is-active {
       display: block;
       animation: fadeIn 0.6s both;
@@ -332,7 +400,7 @@
   @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translatey(40px);
+      transform: translatey(100px);
     }
     100% {
       opacity: 1;

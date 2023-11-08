@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getContract } from "../../../../ApiFeature";
-
+import "../ViewHIstory.scss"
 const EnterCriminalId = ({ setCriminal }) => {
   const [criminalId, setCriminalId] = useState("");
   const handleChange = (event) => {
