@@ -1,5 +1,5 @@
 import "./Stations.scss"
-import Station from "../Assets/Station.svg"
+import Station from "/assets/Station.svg"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';

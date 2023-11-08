@@ -4,24 +4,38 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import { getSigner } from "../../ApiFeature";
 
 const Login = () => {
 
   const [showModal, setShowModal] = useState(false);
-
-  const handleSubmit = (e) => {
+  const [walletConnected, setWalletConnected] = useState(false);
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    setShowModal(true);
+    try {
+      const signer = await getSigner();
+
+      if (signer) {
+        // You are connected to the wallet
+        setWalletConnected(true);
+        setShowModal(true);
+      } else {
+        alert("Please install MetaMask");
+      }
+    } catch (error) {
+      console.error("Error connecting to wallet: ", error);
+    }
   }
 
   const handleFingerPrint = () => {
+
   }
 
 
   return (
     <div className="Login">
       <div className="Gb">
-        <Link to="/home"><button className="Back" >Go Back</button></Link>
+        <Link to="/SurveillanceBureau/home"><button className="Back" >Go Back</button></Link>
       </div>
       <div className="Container">
         <div className="shape"></div>

@@ -16,7 +16,6 @@ import ViewCases from "./pages/dashboard/view-history/view-cases/ViewCases";
 import ViewPreviousCases from "./pages/dashboard/view-history/view-previous-cases/ViewPreviousCases";
 import UpdateCriminalInfo from "./pages/dashboard/update-criminal/update-criminal-info/UpdateInfo";
 import AddNewCases from "./pages/dashboard/update-criminal/add-new-cases/AddNewCases";
-import Identification from "./pages/dashboard/identify-criminal/Identification/Identification";
 
 const Layout = () => {
   return (
@@ -87,10 +86,7 @@ const router = createBrowserRouter([
     path: "/SurveillanceBureau/dashboard/add-new-cases/AddNewCases",
     element: (<AddNewCases />),
   },
-  {
-    path: "/SurveillanceBureau/dashboard/identify-criminal/Identification",
-    element: (<Identification />),
-  },
+
 ]);
 
 const App = () => {
