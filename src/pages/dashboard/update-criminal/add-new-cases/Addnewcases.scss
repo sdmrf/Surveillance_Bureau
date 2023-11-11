@@ -1,0 +1,706 @@
+.Addnewcases {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+
+    .Container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .left {
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .Right {
+            width: 100%;
+        }
+    }
+}
+
+
+//Crime Details
+.Crimedetails {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    .Header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+        .heading {
+            display: flex;
+            flex: 9;
+            justify-content: center;
+
+            h1 {
+                font-size: 2rem;
+                color: lightgray;
+                font-family: var(--font-family);
+                font-weight: 200;
+            }
+
+            .C {
+                color: #D73DC7;
+            }
+
+            .D {
+                color: #9D6FFF;
+            }
+        }
+
+        .back {
+            flex: 1;
+
+            .backIcon {
+                color: gray;
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    .Details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Data {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            width: 75%;
+            margin-bottom: 25px;
+
+            .Column2 {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                .Input {
+                    flex: 3;
+                }
+
+                .Input.Select {
+                    flex: 1;
+                }
+            }
+
+            .Column4 {
+                display: flex;
+                flex-direction: row;
+
+                .Input.date {
+                    flex: 1;
+                }
+
+                .Input.file {
+                    flex: 3;
+                }
+            }
+
+            .Input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #8A8A8A;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                select {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                select {
+                    background-color: transparent;
+                }
+
+
+            }
+
+            .Input.Select {
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fafafa;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            .Input.file {
+                .UploadBtn {
+                    width: fit-content;
+                    background-color: rgba($color: #8A8A8A, $alpha: 0.1);
+                    border: none;
+                    border: 1px solid rgba($color: #6F42A8, $alpha: 0.7);
+                    border-radius: 5px;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    cursor: pointer;
+                }
+
+                .UploadBtn:hover {
+                    background-color: rgba($color: #6F42A8, $alpha: 0.7);
+                    color: #fafafa;
+                }
+
+            }
+
+            .Input.date {
+                cursor: pointer;
+                border: 1px solid #645CBB;
+                font-size: 1.2rem;
+                width: fit-content;
+
+
+                input[type=date] {
+                    background-color: transparent;
+                    border: 1px solid #D73DC7;
+                    width: fit-content;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &::-webkit-calendar-picker-indicator {
+                        filter: invert(1);
+                    }
+                }
+            }
+
+            .Input:active,
+            .Input:focus-within {
+                input {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+
+                select {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+            }
+        }
+
+        .Input.Next {
+            margin-top: 25px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease-in-out;
+                background: rgb(96, 68, 216);
+                background: linear-gradient(90deg, rgba(96, 68, 216, 1) 0%, rgba(185, 20, 211, 1) 78%);
+                border-radius: 50px;
+                border: none;
+                padding: 5px 15px;
+                color: rgba($color: #fafafa, $alpha: 0.8);
+                font-weight: 700;
+                font-size: 1.2rem;
+                cursor: pointer;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    scale: 1.1;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+//Official Details
+
+.Officialdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    .Header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            color: lightgray;
+            font-family: var(--font-family);
+            font-weight: 200;
+        }
+        .O {
+            color: #D73DC7;
+        }
+
+        .D {
+            color: #9D6FFF;
+        }
+    }
+
+    .Details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 70px;
+            width: 75%;
+            margin-bottom: 25px;
+
+            .Column2 {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                .Input {
+                    flex: 3;
+                }
+
+                .Input.Select {
+                    flex: 1;
+                }
+            }
+
+            .Column4 {
+                display: flex;
+                flex-direction: row;
+
+                .Input.date {
+                    flex: 1;
+                }
+
+                .Input.file {
+                    flex: 3;
+                }
+            }
+
+            .Input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #8A8A8A;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                select {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                select {
+                    background-color: transparent;
+                }
+
+
+            }
+
+            .Input.Select {
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fafafa;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+             .Uploads{
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                margin-left: 80px;
+            .Input.file {
+                .UploadBtn {
+                    width: fit-content;
+                    background-color: rgba($color: #8A8A8A, $alpha: 0.1);
+                    border: none;
+                    border: 1px solid rgba($color: #6F42A8, $alpha: 0.7);
+                    border-radius: 5px;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    cursor: pointer;
+                }
+
+                .UploadBtn:hover {
+                    background-color: rgba($color: #6F42A8, $alpha: 0.7);
+                    color: #fafafa;
+                }
+
+            }
+
+            .Input.date {
+                cursor: pointer;
+                border: 1px solid #645CBB;
+                font-size: 1.2rem;
+                width: fit-content;
+
+
+                input[type=date] {
+                    background-color: transparent;
+                    border: 1px solid #D73DC7;
+                    width: fit-content;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &::-webkit-calendar-picker-indicator {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+
+           
+
+            .Input:active,
+            .Input:focus-within {
+                input {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+
+                select {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+            }
+        }
+
+        .Buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 25px;
+            width: 75%;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease-in-out;
+                background: rgb(96, 68, 216);
+                background: linear-gradient(90deg, rgba(96, 68, 216, 1) 0%, rgba(185, 20, 211, 1) 78%);
+                border-radius: 50px;
+                border: none;
+                padding: 5px 15px;
+                color: rgba($color: #fafafa, $alpha: 0.8);
+                font-weight: 700;
+                font-size: 1.2rem;
+                cursor: pointer;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+            .Buttons.Back {
+
+            }
+        }
+    }
+}
+//Court Details
+
+.Courtdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    .Header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            color: lightgray;
+            font-family: var(--font-family);
+            font-weight: 200;
+        }
+
+        .C {
+            color: #D73DC7;
+        }
+
+        .D {
+            color: #9D6FFF;
+        }
+    }
+
+    .Details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Data {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            width: 75%;
+            margin-bottom: 25px;
+
+            .Column2 {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                .Input {
+                    flex: 3;
+                }
+
+                .Input.Select {
+                    flex: 1;
+                }
+            }
+
+            .Column4 {
+                display: flex;
+                flex-direction: row;
+
+                .Input.date {
+                    flex: 1;
+                }
+
+                .Input.file {
+                    flex: 3;
+                }
+            }
+
+            .Input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #8A8A8A;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                select {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #8A8A8A;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                select {
+                    background-color: transparent;
+                }
+
+
+            }
+
+            .Input.Select {
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fafafa;
+                    color: #fafafa;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            .Input.file {
+                .UploadBtn {
+                    width: fit-content;
+                    background-color: rgba($color: #8A8A8A, $alpha: 0.1);
+                    border: none;
+                    border: 1px solid rgba($color: #6F42A8, $alpha: 0.7);
+                    border-radius: 5px;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    cursor: pointer;
+                }
+
+                .UploadBtn:hover {
+                    background-color: rgba($color: #6F42A8, $alpha: 0.7);
+                    color: #fafafa;
+                }
+
+            }
+
+            .Input.date {
+                cursor: pointer;
+                border: 1px solid #645CBB;
+                font-size: 1.2rem;
+                width: fit-content;
+
+
+                input[type=date] {
+                    background-color: transparent;
+                    border: 1px solid #D73DC7;
+                    width: fit-content;
+                    color: #8A8A8A;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    padding: 5px;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &::-webkit-calendar-picker-indicator {
+                        filter: invert(1);
+                    }
+                }
+            }
+
+            .Input:active,
+            .Input:focus-within {
+                input {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+
+                select {
+                    border-bottom: 1px solid #A8DF8E;
+                }
+            }
+        }
+
+        .Buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 25px;
+            width: 100%;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease-in-out;
+                background: rgb(96, 68, 216);
+                background: linear-gradient(90deg, rgba(96, 68, 216, 1) 0%, rgba(185, 20, 211, 1) 78%);
+                border-radius: 50px;
+                border: none;
+                padding: 5px 15px;
+                color: rgba($color: #fafafa, $alpha: 0.8);
+                font-weight: 700;
+                font-size: 1.2rem;
+                cursor: pointer;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+            .Buttons.Back {
+
+            }
+        }
+    }
+}

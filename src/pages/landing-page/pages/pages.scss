@@ -1,0 +1,298 @@
+//Page 1 Scss
+
+.Particle {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color);
+
+  .Top {
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .Logo {
+      width: 10px;
+    }
+    .Buttons {
+      padding-right: 75px;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      .Button {
+        background-color: var(--button-color);
+        font-family: var(--font-family);
+        border: none;
+        color: var(--font-color);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid var(--button-color);
+        }
+      }
+      .Button2{
+        background-color: transparent;
+        font-family: var(--font-family);
+        border: 1px solid var(--button-color);
+        color: var(--font-color);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid var(--button-color);
+        }
+      }
+    }
+  }
+
+  .Mid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 175px;
+    height: 150px;
+    .Text {
+      display: block;
+      text-align: center;
+      width: 750px;
+      font-family: Josefin Sans,sans-serif;
+      color: var(--font-color);
+      font-size: 1.6rem;
+
+      span{
+        color: var(--button-color2);
+      }
+    }
+    p{
+      display: block;
+      text-align: center;
+      width: 750px;
+      font-family: Josefin Sans,sans-serif;
+      color: var(--font-color);
+      font-size: 1.2rem;
+      opacity: 0.7;
+      font-weight: 300;
+    }
+    .Buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        .button{
+            background-color: var(--button-color);
+            font-family: var(--font-family);
+            border: none;
+            color: var(--font-color);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button2{
+            background-color: transparent;
+            font-family: var(--font-family);
+            border: solid 2px var(--button-color2);
+            color: var(--font-color);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--button-color2);
+            }
+        }
+    }
+  }
+}
+
+
+//Page 3 Scss
+
+.Page3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    .Left {
+      height: 450px;
+      width: 350px;
+      background-color: transparent;
+      border: solid 1px var(--button-color2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 1px var(--button-color2);
+        object-fit: cover;
+      }
+      h1 {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.5rem;
+        font-weight: 300;
+        .p {
+          color: var(--button-color);
+        }
+        .d {
+          color: var(--button-color2);
+        }
+      }
+      .Post {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        opacity: 0.7;
+        text-shadow: 1px 1px var(--button-color);
+      }
+      .slogan {
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.4rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .SocialMedia {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+      }
+    }
+    .Mid {
+      height: 500px;
+      width: 500px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     justify-content: center;
+      h1{
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 2.8rem;
+        font-weight: 300;
+        .s {
+          color: var(--button-color);
+        }
+        .b {
+          color: var(--button-color2);
+        }
+      }
+      p{
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.2rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .Buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding-top: 25px;
+        .button{
+            background-color: var(--button-color);
+            font-family: var(--font-family);
+            border: none;
+            color: var(--font-color);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button2{
+            background-color: transparent;
+            font-family: var(--font-family);
+            border: solid 2px var(--button-color2);
+            color: var(--font-color);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--button-color2);
+            }
+        }
+    }
+      
+    }
+    .Right {
+      height: 450px;
+      width: 350px;
+      background-color: transparent;
+      border: solid 1px var(--button-color2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 1px var(--button-color2);
+        object-fit: cover;
+      }
+      h1 {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.5rem;
+        font-weight: 300;
+        .s {
+          color: var(--button-color);
+        }
+        .m {
+          color: var(--button-color2);
+        }
+        .a {
+          color: var(--button-color);
+        }
+      }
+      .Post {
+        font-family: var(--font-family);
+        color: var(--font-color);
+        opacity: 0.7;
+        text-shadow: 1px 1px var(--button-color);
+      }
+      .slogan {
+        text-align: center;
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 1.4rem;
+        opacity: 0.9;
+        text-shadow: 1px 1px var(--button-color2);
+      }
+      .SocialMedia {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+      }
+    }
+  }
+}

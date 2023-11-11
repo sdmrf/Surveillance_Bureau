@@ -1,0 +1,312 @@
+.UpdateCriminal {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    overflow: hidden;
+
+    .Navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .Back {
+            padding: 5px 0px 0px 10px;
+            color: lightgray;
+
+            .BackArrow {
+                width: 45px;
+                height: 45px;
+                color: lightgray;
+
+                &:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .Update {
+            padding-top: 25px;
+            padding-right: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+
+            .Updatebtn {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                background-color: transparent;
+                color: aliceblue;
+                border-radius: 50px;
+                border: 2px solid #A843CB;
+                padding: 1px 1px 1px 10px;
+                cursor: pointer;
+
+                l1 {
+                    font-size: 1.2rem;
+                    font-family: var(--font-family);
+                    color: lightgray;
+                }
+
+                .add {
+                    width: 40px;
+                    height: 40px;
+                    color: #A843CB;
+                }
+            }
+
+            .img {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+
+                .Contain {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 1s ease-in;
+
+                    .Header{
+                        text-decoration: none;
+                    .Update_info{
+
+                    .UpdateCriminal {
+                        width: 200px;
+                        height: 45px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        background-color: transparent;
+                        color: aliceblue;
+                        border-radius: 50px;
+                        border: 2px solid #A843CB;
+                        padding: 1px 1px 1px 10px;
+                        cursor: pointer;
+
+                        l1 {
+                            font-size: 1.2rem;
+                            font-family: var(--font-family);
+                            color: lightgray;
+                            text-decoration-line: none;
+                        }
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+                .Close{
+                    .CloseIcon{
+                        width: 25px;
+                        height: 25px;
+                        color: gray;
+                        cursor: pointer;
+                      }
+                   }
+                }
+            }
+        }
+    }
+
+    .Wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+
+        .Left {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: -35px;
+            gap: 0px;
+
+
+            .Heading {
+                padding: 0px 0px 0px 75px;
+
+                h1 {
+                    display: block;
+                    width: 200px;
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    display: block;
+                    width: 300px;
+                    color: gray;
+                    font-family: var(--font-family);
+                    padding: 0px 0px 0px 50px;
+                }
+            }
+
+            .Illustartion {
+                padding: 0px 0px -60px 50px;
+                width: 600px;
+                height: 600px;
+
+                img {
+                    position: relative;
+                    top: -100px;
+                    width: 600px;
+                    height: 600px;
+                }
+            }
+        }
+
+        .Right {
+            display: flex;
+
+            .Container {
+                display: flex;
+                flex-direction: column;
+                width: 800px;
+                height: 600px;
+                background: linear-gradient(135deg, rgba(149, 47, 175, 0.06) 0.02%, rgba(182, 182, 182, 0.14) 0.03%);
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(22.5px);
+                border-radius: 50px;
+                margin-top: 20px;
+
+                .Text {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding-top: 20px;
+
+                    h1 {
+                        padding-left: 50px;
+                        font-family: var(--font-family);
+                        font-size: 1.8rem;
+                        color: #AD7BE9;
+                    }
+                }
+
+                .UpdateCases {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 35px;
+
+                    .Header {
+                        width: 90%;
+                        height: 40px;
+                        background: linear-gradient(135deg, rgba(149, 47, 175, 0.06) 0.02%, rgba(182, 182, 182, 0.14) 0.03%);
+                        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+                        backdrop-filter: blur(22.5px);
+                        border-radius: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        h1 {
+                            font-family: var(--font-family);
+                            color: lightgray;
+                            font-size: 1.2rem;
+                            display: flex;
+
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .Updatebtn1 {
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 10px;
+                            background-color: transparent;
+                            color: aliceblue;
+                            border-radius: 50px;
+                            border: 2px solid #A843CB;
+
+                            l1 {
+                                font-size: 1rem;
+                                font-family: var(--font-family);
+                                color: lightgray;
+                            }
+
+                            .add {
+                                width: 30px;
+                                height: 30px;
+                                color: #A843CB;
+                            }
+                        }
+
+                    }
+
+                    .Content {
+                        padding-top: 50px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        align-items: center;
+
+                        .Case {
+                            width: 90%;
+                            height: 40px;
+                            background: rgba(8, 9, 9, 0.75);
+                            border-radius: 50px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+
+                            h1 {
+                                font-family: var(--font-family);
+                                color: grey;
+                                font-size: 1.2rem;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+
+                            }
+
+                            .CaseID {
+
+                                padding-left: 50px;
+                            }
+
+                            .Charges {
+                                flex: 3;
+                            }
+
+                            .Icon {
+                                color: #AD7BE9;
+                                width: 30px;
+                                height: 30px;
+                                flex: 1;
+                                transition: all 0.3s ease-in-out;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    color: #6044D8;
+                                    flex: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
