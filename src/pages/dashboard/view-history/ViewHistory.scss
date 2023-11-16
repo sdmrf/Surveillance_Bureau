@@ -22,8 +22,7 @@
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-    background-color: #74ebd5;
-    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+    background-color: var(--font-color);
     display: flex;
     transition: 0.3s;
     flex-direction: column;
@@ -231,7 +230,7 @@
 
   .card-subtitle {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 1rem;
     margin-bottom: 8px;
   }
 
@@ -311,6 +310,8 @@
     margin-top: 7px;
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
+    display: block;
+    width: 300px;
 
     span {
       font-weight: 500;

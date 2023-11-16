@@ -13,7 +13,6 @@ const ViewHistory = () => {
   const [criminalId, setCriminalId] = useState("");
   const [caseId, setCaseId] = useState("");
   const [cases, setCases] = useState(null);
-  const [casesX , setCasesX] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -82,7 +81,7 @@ const ViewHistory = () => {
       {criminal ? (
         <>
           {isCases ? (
-            <ViewCases criminal={criminal} cases={cases}/>
+            <ViewCases criminal={criminal} cases={cases} setIsCases={setIsCases} />
           ) : (
             <div className="ViewHistory">
               <div className="card" data-state="#about">
@@ -219,14 +218,14 @@ const ViewHistory = () => {
                           <div className="mainDiv">
                             <div
                               className="card-item"
-                              data-year="2014"
+                              data-year={cases && cases[1].doi.substring(0, 4)}
                               key={index}
                             >
                               <div className="card-item-title">
                                 Case ID: <span>{caseId}</span>
                               </div>
                               <div className="card-item-desc">
-                                Charges: GoldRobbery-IPC390
+                                Charges: {cases && cases[1].offence}-{cases && cases[1].ipc}
                               </div>
                               <button
                                 onClick={() => {
