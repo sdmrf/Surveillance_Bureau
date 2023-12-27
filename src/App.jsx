@@ -13,7 +13,6 @@ import RegisterCriminal from "./pages/dashboard/register-criminal/RegisterCrimin
 import UpdateCriminal from "./pages/dashboard/update-criminal/UpdateCriminal";
 import ViewHistory from "./pages/dashboard/view-history/ViewHistory";
 import ViewCases from "./pages/dashboard/view-history/view-cases/ViewCases";
-import ViewPreviousCases from "./pages/dashboard/view-history/view-previous-cases/ViewPreviousCases";
 import UpdateCriminalInfo from "./pages/dashboard/update-criminal/update-criminal-info/UpdateInfo";
 import AddNewCases from "./pages/dashboard/update-criminal/add-new-cases/AddNewCases";
 
@@ -69,10 +68,6 @@ const router = createBrowserRouter([
   {
     path: "/SurveillanceBureau/dashboard/view-history",
     element: (<ViewHistory />),
-  },
-  {
-    path: "/SurveillanceBureau/dashboard/view-history/view-previous-cases",
-    element: (<ViewPreviousCases />),
   },
   {
     path: "/SurveillanceBureau/dashboard/view-history/view-cases",

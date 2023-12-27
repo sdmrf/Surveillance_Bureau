@@ -5,28 +5,17 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from 'react-router-dom';
 
-const Crimedetails = ({formData , setFormData, nextStep}) => {
-    const [nameOfVictim, setNameOfVictim] = useState('');
-    const [typeOfOffence, setTypeOfOffence] = useState('');
-    const [IPCSection, setIPCSection] = useState('');
-    const [Location, setLocation] = useState('');
-    const [Date, setDate] = useState('');
-    const [CrimeReport, setCrimeReport] = useState(null);
-    const [DescriptionOfIncident, setDescriptionOfIncident] = useState('');
+const Crimedetails = ({ formData, setFormData, nextStep }) => {
 
-    const handleNext = () => {
-        const step1Data = {
-            nameOfVictim,
-            typeOfOffence,
-            IPCSection,
-            Location,
-            Date,
-            CrimeReport,
-            DescriptionOfIncident
-        };
-        setFormData({ ...formData, ...step1Data });
-        nextStep();
-    };
+    const handleChange = (e) => {
+      console.log(e.target.name, e.target.value);
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+
+    const handleNext = (e) => {
+      e.preventDefault();
+      nextStep();
+    }
 
     const [isEditingDob, setIsEditingDob] = useState(false);
 
@@ -51,14 +40,14 @@ const Crimedetails = ({formData , setFormData, nextStep}) => {
       <form onSubmit={handleNext} className='Details'>
         <div className="Data">
              <div className="Input">
-                <input type="text" value={nameOfVictim} onChange={(e) => setNameOfVictim(e.target.value)} placeholder="Name Of Victim" />
+                <input type="text" value={formData.nameOfVictim} onChange={handleChange} name='nameOfVictim' placeholder="Name Of Victim" />
              </div>
              <div className="Column2">
              <div className="Input">
-                <input type="text" value={typeOfOffence} onChange={(e) => setTypeOfOffence(e.target.value)} placeholder="Type Of Offence" />
+                <input type="text" value={formData.typeOfOffence} onChange={handleChange} name='typeOfOffence' placeholder="Type Of Offence" />
              </div>
              <div className="Input Select">
-                <select value={IPCSection} onChange={(e) => setIPCSection(e.target.value)}>
+                <select value={formData.IPCSection} onChange={handleChange} name="IPCSection">
                     <option value="">Select IPC Section</option>
                     <option value="IPC Section 1">IPC Section 378</option>
                     <option value="IPC Section 2">IPC Section 382</option>
@@ -78,21 +67,22 @@ const Crimedetails = ({formData , setFormData, nextStep}) => {
              </div>
              </div>
              <div className="Input">
-                <input type="text" value={Location} onChange={(e) => setLocation(e.target.value)} placeholder="Location" />
+                <input type="text" value={formData.LocationOfIncident} onChange={handleChange} name='LocationOfIncident' placeholder="Location" />
              </div>
              <div className="Column4">
              <div className="Input date" id="dobContainer">
                         {isEditingDob ? (
                             <input
                                 type="date"
-                                value={Date}
-                                onChange={(e) => setDate(e.target.value)}
+                                value={formData.doi}
+                                onChange={handleChange}
                                 onBlur={handleDobBlur}
+                                name='doi'
                                 autoFocus
                             />
                         ) : (
                             <span id="dobText" onClick={convertToInput}>
-                                {Date ? Date : 'Date Of Incident'}
+                                {formData.doi ? formData.doi : 'Date Of Incident'}
                             </span>
                         )}
                     </div>
@@ -105,17 +95,16 @@ const Crimedetails = ({formData , setFormData, nextStep}) => {
                             id="CrimeReportInput"
                             type="file"
                             accept="application/txt application/pdf application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                            onChange={(e) => setCrimeReport(e.target.files[0])}
                             style={{ display: "none" }}
                         />
                     </div>
                     </div>
                     <div className="Input">
-                        <input type="text" value={DescriptionOfIncident} onChange={(e) => setDescriptionOfIncident(e.target.value)} placeholder="Description Of Incident" />
+                        <input type="text" value={formData.DescriptionOfIncident} onChange={handleChange} name='DescriptionOfIncident' placeholder="Description Of Incident" />
                     </div>
         </div>
         <div className="Input Next">
-        <button className = 'NextBtn' onClick={handleNext}>Next
+        <button className = 'NextBtn' type="submit" onClick={handleNext}>Next
           <ArrowForwardIcon />
         </button>
       </div>
