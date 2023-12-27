@@ -11,7 +11,6 @@ Welcome to the Surveillance Bureau project! In a world where criminal activities
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Integration](#api-integration)
 - [Blockchain Backend](#blockchain-backend)
 - [Contributors](#contributors)
 - [Contact](#contact)
@@ -39,19 +38,22 @@ Our vision is to empower law enforcement agencies with the tools they need to cr
 ```bash
 
 Surveillance-Bureau/ # Root directory for the entire project
-├── src/
-│ ├── api/
-│ ├── components/
-│ ├── contracts/ # Truffle smart contract artifacts
-│ ├── ...
-│
-Smart_Contracts/
 ├── contracts/ # Solidity smart contract source files
-│ ├── CriminalRecords.sol
-│ ├── ...
-├── migrations/ # Truffle migration scripts
-│ ├── 1_initial_migration.js
-│ ├── 2_deploy_contracts.js
+│ ├── criminalRecords.sol
+├── public/
+│ ├── assets/
+│ └── models/ # ML models for face detection
+├── scripts/
+│ ├── deploy.js # Hardhat file
+├── src/
+│ ├── pages/
+│ ├── ApiFeatures.js
+│ ├── App.jsx
+│ ├── App.scss
+│ ├── main.jsx
+│ ├── main.scss
+├── test/
+│ ├── Lock.js # Hardhat file
 ├── ...
 
 ```
@@ -71,77 +73,65 @@ Follow these instructions to get the project up and running on your local machin
 
 ### Prerequisites
 
-- Node.js (version 18.16.1)
-- npm (version 9.8.1)
+- Node.js (version 14.x or higher)
+- npm (version 7.x or higher)
+- [Metamask Extension](https://metamask.io/) for your web browser.
 
 ### Installation
 
 1. Clone the repository: `git clone https://github.com/sdmrf/Surveillance-Bureau.git`
-2. Navigate to the project directory: `cd SB`
-3. Navigate to the parent directory: `cd Surveillance-Bureau`
-5. Install dependencies: `npm install`
+2. Navigate to the project directory: `cd Surveillance-Bureau`
+3. Install dependencies: `npm install`
 
 ## Usage
 
 1. Start the development server: `npm run dev`
 2. Access the application in your web browser at `http://localhost:5173/`
 
-## API Integration
-
-This project integrates Amazon Rekognition API for facial recognition. To integrate the API:
-
-1. Sign up for an AWS account and set up Amazon Rekognition.
-2. Create a new Rekognition collection for face data storage.
-3. Update your AWS credentials in the `rekognition.js` file located in `src/api`.
-4. Implement functions to call Rekognition APIs for face detection and recognition.
-5. Integrate these functions with your React components to analyze uploaded images.
+## Blockchain Backend
 
 ## Blockchain Backend
 
-The project's blockchain backend is powered by the Truffle framework. The smart contract logic is written in Solidity and resides in the Smart_Contracts folder outside of the React project. Truffle's development environment streamlines the process of compiling, deploying, and interacting with smart contracts.
+The project's blockchain backend is powered by the Hardhat framework. The smart contract logic is written in Solidity and resides in the `contracts` directory. Hardhat's development environment streamlines the process of compiling, deploying, and interacting with smart contracts.
 
 To enhance the blockchain functionality:
 
-1. **Install Truffle:**
+1. **Install Hardhat:**
    - Make sure you have Node.js and npm installed.
-   - Install Truffle globally using npm:
+   - Install Hardhat globally using npm:
      ```bash
-     npm install -g truffle
+     npm install -g hardhat
      ```
 
 2. **Write Smart Contracts:**
-   - Create your Solidity smart contract files in the `Smart_Contracts/contracts` directory.
+   - Create your Solidity smart contract files in the `contracts` directory.
    - Define your contract's functionality, state variables, and methods as needed.
 
-3. **Configure Truffle:**
-   - Navigate to the `Smart_Contracts` directory and run:
-     ```bash
-     truffle init
-     ```
-   - This initializes a Truffle project and sets up the necessary directory structure.
+3. **Configure Hardhat:**
+   - Hardhat does not require initialization like Truffle. Configuration is handled in the `hardhat.config.js` file, which is already present in the project root.
 
 4. **Migration Scripts:**
-   - Add migration scripts to the `Smart_Contracts/migrations` directory.
+   - Add migration scripts to the `scripts` directory.
    - Migration scripts define the deployment sequence for your smart contracts.
 
 5. **Compile and Deploy:**
    - Compile your contracts using:
      ```bash
-     truffle compile
+     npx hardhat compile
      ```
    - Deploy your contracts to a blockchain network using migration scripts:
      ```bash
-     truffle migrate
+     npx hardhat run scripts/deploy.js
      ```
 
 6. **Interact with Contracts:**
-   - Use Truffle's console to interact with your deployed contracts:
+   - Use Hardhat's console to interact with your deployed contracts:
      ```bash
-     truffle console
+     npx hardhat console
      ```
    - You can call contract methods, retrieve data, and more.
 
-Truffle simplifies the entire lifecycle of smart contracts, from development to deployment. The combination of React.js, Vite, and Truffle empowers the Surveillance Bureau with a robust and secure blockchain backend.
+Hardhat simplifies the entire lifecycle of smart contracts, from development to deployment. The combination of React.js, Vite, and Hardhat empowers the Surveillance Bureau with a robust and secure blockchain backend.
 
 ## Contributors
 
@@ -162,7 +152,7 @@ If you have any questions or need further assistance, feel free to reach out to 
   
 - LinkedIn
 - [Syed Maruf Ali](https://www.linkedin.com/in/syedmarufali/)
-- [Paresh Pradeep Deshpande]
+- [Paresh Pradeep Deshpande](https://www.linkedin.com/in/deshpande-paresh/)
 
 ## License
 
