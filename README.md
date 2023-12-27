@@ -90,8 +90,6 @@ Follow these instructions to get the project up and running on your local machin
 
 ## Blockchain Backend
 
-## Blockchain Backend
-
 The project's blockchain backend is powered by the Hardhat framework. The smart contract logic is written in Solidity and resides in the `contracts` directory. Hardhat's development environment streamlines the process of compiling, deploying, and interacting with smart contracts.
 
 To enhance the blockchain functionality:
