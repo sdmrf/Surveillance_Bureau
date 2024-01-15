@@ -21,7 +21,7 @@
     "@splinetool/runtime": "^0.9.492",
     "ethers": "^6.8.0",
     "face-api.js": "^0.22.2",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "ipfs-http-client": "^60.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
